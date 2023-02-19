@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2d5438dc42957de4ca9ba8e0814805ed
+guid: fadfd0c51a8e6f3449b4a40eea9c62d6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Student Stand Right_0
+      name: ExplorerHeroRunRight_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 339918e4b6c97be48a2078bf89472275
-      internalID: 1994258188
+      spriteID: 36076314a6475684aaddd1db4e577cb2
+      internalID: 490074787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Student Stand Right_1
+      name: ExplorerHeroRunRight_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c6f9292840a5d458f7fcb1adf184e4
-      internalID: 1274708277
+      spriteID: 801bd74bd2d0293438ac21c34b95f75d
+      internalID: -1772862674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Student Stand Right_2
+      name: ExplorerHeroRunRight_2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b160b4649f965694081b53a31f3dcdf2
-      internalID: -1926941593
+      spriteID: 2c592099fbff08145b4a9cde14955095
+      internalID: -1325494203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Student Stand Right_3
+      name: ExplorerHeroRunRight_3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,134 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb3fb21084960b4c8337eaadc0ceb36
-      internalID: 1177673391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Student Stand Right_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c88c042d1246ad04ea1a929f4e23b0c7
-      internalID: 132458927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Student Stand Right_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60f1f0c70ad08a145827311d402f9d3e
-      internalID: -790585869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Student Stand Right_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc8d5ef31c46cc64b9c87bc40f108439
-      internalID: -148195267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Student Stand Right_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb28a714160ab7f4a906c16b20e20cad
-      internalID: -603259918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Student Stand Right_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62aeb3c8e208d184886e3c58ebca046c
-      internalID: 72542742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Student Stand Right_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 577a33fd705279b42adcc7f3d375dc3e
-      internalID: 968968081
+      spriteID: df583e99c7a6fec4a8523cc65ea42466
+      internalID: -1247443062
       vertices: []
       indices: 
       edges: []
@@ -337,16 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Student Stand Right_1: 1274708277
-      Student Stand Right_4: 132458927
-      Student Stand Right_6: -148195267
-      Student Stand Right_3: 1177673391
-      Student Stand Right_7: -603259918
-      Student Stand Right_2: -1926941593
-      Student Stand Right_5: -790585869
-      Student Stand Right_0: 1994258188
-      Student Stand Right_8: 72542742
-      Student Stand Right_9: 968968081
+      ExplorerHeroRunRight_1: -1772862674
+      ExplorerHeroRunRight_2: -1325494203
+      ExplorerHeroRunRight_0: 490074787
+      ExplorerHeroRunRight_3: -1247443062
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
