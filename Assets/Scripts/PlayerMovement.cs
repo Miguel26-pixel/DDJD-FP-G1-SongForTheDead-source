@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -21,8 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movement = new Vector3(_speed.x * inputX, _speed.y * inputY, 0);
 
-        bool isRunning = movement.x != 0 || movement.y != 0;
-        _animator.SetBool("isRunning", isRunning);
+        _animator.SetBool("isWalking", movement.x != 0 || movement.y != 0);
 
         movement *= Time.deltaTime;
 
