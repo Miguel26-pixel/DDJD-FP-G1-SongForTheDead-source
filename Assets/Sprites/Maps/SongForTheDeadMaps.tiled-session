@@ -1,0 +1,75 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "base.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "buildings.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "buildings2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "buildings3.tsx": {
+            "dynamicWrapping": false
+        },
+        "level1.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "obelisk.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "untitled.tmx": {
+            "scale": 2,
+            "selectedLayer": -1,
+            "viewCenter": {
+                "x": 797.75,
+                "y": 542.75
+            }
+        }
+    },
+    "last.imagePath": "C:/Users/migam/Downloads/Obelisk_demo",
+    "map.height": 75,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.orientation": null,
+    "map.renderOrder": null,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 75,
+    "openFiles": [
+        "level1.tsx",
+        "base.tsx"
+    ],
+    "project": "SongForTheDeadMaps.tiled-project",
+    "recentFiles": [
+        "obelisk.tsx",
+        "buildings2.tsx",
+        "buildings.tsx",
+        "level1.tsx",
+        "base.tsx",
+        "untitled.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.spacing": 1,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.type": 0
+}

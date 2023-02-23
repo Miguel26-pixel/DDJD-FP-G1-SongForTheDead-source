@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: 18805e782f1b5174aaaeb9280254900f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f949f1fa561271d4185d137292b61a15
+      internalID: 1713548122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e2c21b68757fe479f63e04bb484cf6
+      internalID: -1829023052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b2e4ab56eb07949a99ce32a8c9ed78
+      internalID: 1189903115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_3
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c13effaae44f4342805018d9f0dcc68
+      internalID: 574296961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_4
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8460557000a634aaf95fd509169f01
+      internalID: 1097514545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_5
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b785163a4586b714197a3d6b1ee0167b
+      internalID: -2014669817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_6
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3ab01b786eca24aafbe29923a21ee3
+      internalID: -1936082884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_7
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a50ce01c35a3fa4f97f934c3254090f
+      internalID: -98974648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_8
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a75f326158cccf4989f763b000ae570
+      internalID: 338890155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_9
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea069136647f7654294b24c0831f510a
+      internalID: -1269130014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_10
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cafac4e8824bb94eb7523d682b74456
+      internalID: 1770751591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_11
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 122
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50a3049154c64d4da3b09b1587a6d5c
+      internalID: 163350180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bf035a964c1854ba9c92beb1764ce4
+      internalID: -1775223543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187dcb20890085b4ab877ff7bd5012d9
+      internalID: -1384656140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cdc897434166d4dba46cd21f8c8330
+      internalID: 1879711657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_15
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18b60d480e60764e9fb3ea580f99c2b
+      internalID: -517578417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_16
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b1adf86a970484eaff8c8ee6e3c4f7
+      internalID: 1880377831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_17
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bad70cd765455489c22b1140456500
+      internalID: -726941998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostKingIdleAnim-removebg-preview (1)_18
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 84.333336
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bcf8b35451c5d478bc5f460771cdfd
+      internalID: -1401409502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GhostKingIdleAnim-removebg-preview (1)_16: 1880377831
+      GhostKingIdleAnim-removebg-preview (1)_10: 1770751591
+      GhostKingIdleAnim-removebg-preview (1)_3: 574296961
+      GhostKingIdleAnim-removebg-preview (1)_11: 163350180
+      GhostKingIdleAnim-removebg-preview (1)_6: -1936082884
+      GhostKingIdleAnim-removebg-preview (1)_14: 1879711657
+      GhostKingIdleAnim-removebg-preview (1)_1: -1829023052
+      GhostKingIdleAnim-removebg-preview (1)_17: -726941998
+      GhostKingIdleAnim-removebg-preview (1)_15: -517578417
+      GhostKingIdleAnim-removebg-preview (1)_8: 338890155
+      GhostKingIdleAnim-removebg-preview (1)_7: -98974648
+      GhostKingIdleAnim-removebg-preview (1)_5: -2014669817
+      GhostKingIdleAnim-removebg-preview (1)_9: -1269130014
+      GhostKingIdleAnim-removebg-preview (1)_18: -1401409502
+      GhostKingIdleAnim-removebg-preview (1)_4: 1097514545
+      GhostKingIdleAnim-removebg-preview (1)_12: -1775223543
+      GhostKingIdleAnim-removebg-preview (1)_2: 1189903115
+      GhostKingIdleAnim-removebg-preview (1)_0: 1713548122
+      GhostKingIdleAnim-removebg-preview (1)_13: -1384656140
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
