@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector2 _speed = new Vector2(10, 10);
     private Animator _animator;
-    private bool _facingRight = true;
+    public bool _facingRight = true;
 
     // Start is called before the first frame update
     void Start()
@@ -23,15 +23,22 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetBool("isWalking", movement.x != 0 || movement.y != 0);
 
 
-        if ((_facingRight && movement.x < 0) || (!_facingRight && movement.x >= 0))
+        if ((_facingRight && movement.x < 0) || (!_facingRight && movement.x > 0))
         {
-            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+            Flip();
         }
-
-        _facingRight = movement.x >= 0;
 
         movement *= Time.deltaTime;
 
         transform.Translate(movement);
+    }
+
+    void Flip()
+    {
+        _facingRight = !_facingRight;
+
+        Vector3 currentScale = transform.localScale;
+        currentScale.x *= -1;
+        transform.localScale = currentScale;
     }
 }
