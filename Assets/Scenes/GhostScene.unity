@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 20, y: 20}
-  moveSpeed: 5
+  moveSpeed: 20
 --- !u!95 &458531272
 Animator:
   serializedVersion: 5
