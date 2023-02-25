@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private Transform _launchOffset;
 
     [Range(0f, 2f)]
     [SerializeField] private float _firingRate = 1.0f;
@@ -21,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && _fireTimer <= 0)
+        if (Input.GetButton("Fire1") && _fireTimer <= 0)
         {
             Shoot();
             _fireTimer = _firingRate;
@@ -34,9 +35,6 @@ public class PlayerAttack : MonoBehaviour
 
     void Shoot()
     {
-        Vector3 bulletPosition = transform.position;
-
-        GameObject newBullet = Instantiate(_bulletPrefab, bulletPosition, Quaternion.identity);
-        newBullet.transform.right = transform.right.normalized;
+        Instantiate(_bulletPrefab, _launchOffset.position, transform.rotation);
     }
 }
