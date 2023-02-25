@@ -35,6 +35,6 @@ public class PlayerAttack : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(_bulletPrefab, _launchOffset.position, transform.rotation);
+        Instantiate(_bulletPrefab, _launchOffset.position, _launchOffset.rotation);
     }
 }
