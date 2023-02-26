@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [Range(1, 10)]
-    [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _speed = 100f;
 
     [Range(1, 10)]
     [SerializeField] private float _lifetime = 1f;
@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
     {
         if (_rigidbody)
         {
-            _rigidbody.velocity = transform.right * _speed;
+            _rigidbody.velocity = transform.right.normalized * _speed;
         }
     }
 
