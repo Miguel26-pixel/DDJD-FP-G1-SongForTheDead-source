@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
-public class EnemyIA : MonoBehaviour
+public class MiniGhost : MonoBehaviour
 {
     public float speed;
     public float checkRadius;
     public float attackRadius;
-    public bool isAlive = true;
+    public bool isAlive;
     public bool isToAttack = false;
 
     public bool shouldRotate;
+    public bool destroy = false;
 
     public LayerMask whatIsPlayer;
 
@@ -22,6 +24,23 @@ public class EnemyIA : MonoBehaviour
 
     private bool isInChaseRange;
     private bool isInAttackRange;
+    public float Health {
+        set {
+            _health = value;
+
+            if(_health <= 0) {
+                anim.SetTrigger("Death");
+                anim.SetBool("Destroy", true);
+                destroy = true;
+
+            }
+        }
+        get{
+            return _health;
+        }
+    }
+
+    public float _health = 3;
 
     private void Start()
     {
@@ -33,6 +52,7 @@ public class EnemyIA : MonoBehaviour
 
     private void Update()
     {
+
         anim.SetBool("isRunning", isInChaseRange);
 
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
@@ -51,6 +71,7 @@ public class EnemyIA : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         if(isInChaseRange && !isInAttackRange)
         {
             anim.SetBool("isToAttack", false);
@@ -60,10 +81,19 @@ public class EnemyIA : MonoBehaviour
         {
             anim.SetBool("isToAttack", true);
         }
+        if(destroy){
+            Destroy(gameObject);
+        }
     }
 
     private void MoveCharacter(Vector2 dir)
     {
         rb.MovePosition((Vector2)transform.position + (dir*speed*Time.deltaTime));
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        Debug.Log("ola");
+        Health -= 1;
+    }
+
 }
