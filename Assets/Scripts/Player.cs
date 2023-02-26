@@ -1,15 +1,20 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public Vector2 _speed = new Vector2(10, 10);
+    public Vector3 _speed = new Vector3(10, 10);
     private Animator _animator;
+    private Rigidbody2D _rb;
     public bool _facingRight = true;
+
+    public Bullet _projectilePrefab;
+    public Transform _lauchOffset;
 
     // Start is called before the first frame update
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -28,17 +33,22 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         }
 
-        movement *= Time.deltaTime;
+        transform.position += movement * Time.deltaTime;
 
-        transform.Translate(movement);
+        //movement *= Time.deltaTime;
+
+        //transform.Translate(movement);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(_projectilePrefab, _lauchOffset.position, transform.rotation);
+        }
     }
 
     void Flip()
     {
         _facingRight = !_facingRight;
 
-        Vector3 currentScale = transform.localScale;
-        currentScale.x *= -1;
-        transform.localScale = currentScale;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
