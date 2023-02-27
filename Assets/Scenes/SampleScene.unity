@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 1765004805}
   - component: {fileID: 1765004806}
   - component: {fileID: 1765004807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Student
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,6 +449,18 @@ PrefabInstance:
     - target: {fileID: 6053136775472589027, guid: b182058ba9085b4428c084180839b014, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053136775472589027, guid: b182058ba9085b4428c084180839b014, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.636467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053136775472589027, guid: b182058ba9085b4428c084180839b014, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.636467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053136775472589027, guid: b182058ba9085b4428c084180839b014, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.636467
       objectReference: {fileID: 0}
     - target: {fileID: 6053136775472589027, guid: b182058ba9085b4428c084180839b014, type: 3}
       propertyPath: m_LocalPosition.x

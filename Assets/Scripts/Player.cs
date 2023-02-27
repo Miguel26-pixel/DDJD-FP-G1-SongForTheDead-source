@@ -79,8 +79,6 @@ public class Player : MonoBehaviour
             // Set the new weapon's parent to the player game object
             newWeapon.transform.SetParent(transform);
 
-            // Disable the weapon object in the game world
-            newWeapon.gameObject.SetActive(false);
         }
     }
 }
