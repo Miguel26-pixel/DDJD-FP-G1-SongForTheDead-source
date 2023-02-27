@@ -36,6 +36,13 @@ public class Player : MonoBehaviour
 
         transform.position += movement * Time.deltaTime;
 
+        // Hide all weapons except the current one
+        for (int i = 0; i < _weapons.Count; i++)
+        {
+            _weapons[i].gameObject.SetActive(i == _currentWeaponIndex);
+        }
+
+        // Update current weapon
         if (_weapons.Count > 0)
         {
             _currentWeapon = _weapons[_currentWeaponIndex];
@@ -79,6 +86,9 @@ public class Player : MonoBehaviour
             newWeapon.transform.SetParent(transform);
             newWeapon.transform.localPosition = new Vector3(0.15f, 0f, 0f);
             newWeapon.transform.localRotation = Quaternion.identity;
+
+            // Make the newly acquired weapon the current selected one
+            _currentWeaponIndex = _weapons.IndexOf(newWeapon);
 
         }
     }
