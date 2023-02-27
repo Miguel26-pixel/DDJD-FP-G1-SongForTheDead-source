@@ -2,28 +2,39 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Vector3 _speed = new Vector3(10, 10);
+
+    // Moving
     private Animator _animator;
     private Rigidbody2D _rb;
-    public bool _facingRight = true;
 
-    public Bullet _projectilePrefab;
-    public Transform _lauchOffset;
+    public Vector3 _speed = new Vector3(10, 10);
+    private bool _facingRight = true;
 
-    // Start is called before the first frame update
+    // Attacking
+    [SerializeField]
+    private Bullet _projectilePrefab;
+    [SerializeField]
+    private Transform _lauchOffset;
+    private Vector3 _myScreenPos;
+    private float _shootingSpeed;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
+        _shootingSpeed = _projectilePrefab.getSpeed();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        _myScreenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(_speed.x * inputX, _speed.y * inputY, 0);
+
+        Vector3 shootingDirection = (Input.mousePosition - _myScreenPos).normalized;
 
         _animator.SetBool("isWalking", movement.x != 0 || movement.y != 0);
 
@@ -35,13 +46,10 @@ public class Player : MonoBehaviour
 
         transform.position += movement * Time.deltaTime;
 
-        //movement *= Time.deltaTime;
-
-        //transform.Translate(movement);
-
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(_projectilePrefab, _lauchOffset.position, transform.rotation);
+            Bullet bullet = Instantiate(_projectilePrefab, transform.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootingDirection.x, shootingDirection.y) * _shootingSpeed;
         }
     }
 

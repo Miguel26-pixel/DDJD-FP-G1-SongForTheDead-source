@@ -16,18 +16,6 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, _lifetime);
     }
 
-    private void Update()
-    {
-    }
-
-    private void FixedUpdate()
-    {
-        if (_rigidbody)
-        {
-            _rigidbody.velocity = transform.right.normalized * _speed;
-        }
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (_rigidbody)
@@ -35,6 +23,11 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
         Debug.Log("ola2");
+    }
+
+    public float getSpeed()
+    {
+        return _speed;
     }
 
 }
