@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 1073854579}
   - component: {fileID: 1073854578}
   - component: {fileID: 1073854580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MiniGhost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: {x: 10, y: 10, z: 0}
-  _facingRight: 1
   _projectilePrefab: {fileID: 4058330902315117236, guid: ad2ee17f10e61674291501869bea5f9e, type: 3}
   _lauchOffset: {fileID: 2137149609}
 --- !u!61 &1765004807
