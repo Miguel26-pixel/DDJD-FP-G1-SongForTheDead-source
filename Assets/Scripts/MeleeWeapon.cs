@@ -20,6 +20,24 @@ public class MeleeWeapon : Weapon
     public override void Fire()
     {
         base.Fire();
-        // play swing animation and damage enemies
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _range);
+
+        foreach (Collider2D collider in colliders)
+        {
+            MiniGhost enemy = collider.GetComponent<MiniGhost>();
+
+            if (enemy != null)
+            {
+                Debug.Log("Guitar hit on " + enemy.name);
+                enemy.TakeDamage(_damage);
+            }
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _range);
     }
 }

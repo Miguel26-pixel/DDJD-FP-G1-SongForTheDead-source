@@ -147,6 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 5
-  _range: 3
+  _range: 1
   _fireRate: 5
   swingTime: 2

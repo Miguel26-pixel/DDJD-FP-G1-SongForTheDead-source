@@ -91,6 +91,11 @@ public class MiniGhost : MonoBehaviour
         rb.MovePosition((Vector2)transform.position + (dir*speed*Time.deltaTime));
     }
 
+    public void TakeDamage(float damage)
+    {
+        Health -= damage;
+    }
+
     private void OnCollisionEnter2D(Collision2D other) {
         Debug.Log("ola");
         Health -= 1;
