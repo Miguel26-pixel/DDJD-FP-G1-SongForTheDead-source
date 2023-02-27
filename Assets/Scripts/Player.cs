@@ -1,40 +1,30 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Weapons
+    public List<Weapon> _weapons;
+    public Weapon _currentWeapon;
+    public int _currentWeaponIndex = 0;
 
     // Moving
     private Animator _animator;
-    private Rigidbody2D _rb;
-
     public Vector3 _speed = new Vector3(10, 10);
     private bool _facingRight = true;
 
-    // Attacking
-    [SerializeField]
-    private Bullet _projectilePrefab;
-    [SerializeField]
-    private Transform _lauchOffset;
-    private Vector3 _myScreenPos;
-    private float _shootingSpeed;
 
     void Start()
     {
         _animator = GetComponent<Animator>();
-        _rb = GetComponent<Rigidbody2D>();
-        _shootingSpeed = _projectilePrefab.getSpeed();
     }
 
     void Update()
     {
-        _myScreenPos = Camera.main.WorldToScreenPoint(this.transform.position);
-
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(_speed.x * inputX, _speed.y * inputY, 0);
-
-        Vector3 shootingDirection = (Input.mousePosition - _myScreenPos).normalized;
 
         _animator.SetBool("isWalking", movement.x != 0 || movement.y != 0);
 
@@ -46,10 +36,26 @@ public class Player : MonoBehaviour
 
         transform.position += movement * Time.deltaTime;
 
+        if (_weapons.Count > 0)
+        {
+            _currentWeapon = _weapons[_currentWeaponIndex];
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            // Cycle through the player's equipped weapons
+            _currentWeaponIndex++;
+            if (_currentWeaponIndex >= _weapons.Count)
+            {
+                _currentWeaponIndex = 0;
+            }
+
+            _currentWeapon = _weapons[_currentWeaponIndex];
+        }
+
         if (Input.GetButtonDown("Fire1"))
         {
-            Bullet bullet = Instantiate(_projectilePrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootingDirection.x, shootingDirection.y) * _shootingSpeed;
+            _currentWeapon.Fire();
         }
     }
 
@@ -58,5 +64,23 @@ public class Player : MonoBehaviour
         _facingRight = !_facingRight;
 
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Triggered");
+        Weapon newWeapon = other.GetComponent<Weapon>();
+
+        if (newWeapon != null)
+        {
+            // Add the new weapon to the player's list of weapons
+            _weapons.Add(newWeapon);
+
+            // Set the new weapon's parent to the player game object
+            newWeapon.transform.SetParent(transform);
+
+            // Disable the weapon object in the game world
+            newWeapon.gameObject.SetActive(false);
+        }
     }
 }
