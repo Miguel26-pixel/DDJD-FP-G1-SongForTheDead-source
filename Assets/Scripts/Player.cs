@@ -68,7 +68,6 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Triggered");
         Weapon newWeapon = other.GetComponent<Weapon>();
 
         if (newWeapon != null)
@@ -76,8 +75,10 @@ public class Player : MonoBehaviour
             // Add the new weapon to the player's list of weapons
             _weapons.Add(newWeapon);
 
-            // Set the new weapon's parent to the player game object
+            // Set the weapon as a child of the player and position/rotate it
             newWeapon.transform.SetParent(transform);
+            newWeapon.transform.localPosition = new Vector3(0.15f, 0f, 0f);
+            newWeapon.transform.localRotation = Quaternion.identity;
 
         }
     }
