@@ -1,0 +1,1477 @@
+fileFormatVersion: 2
+guid: 2faa7957cad88414c995f1899b2fe320
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9794
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a86f922464fb640a9d1161263b5651
+      internalID: 1020117266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9631
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6b3abe68444874587ab6f644f0e480
+      internalID: -2126017747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9468
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712a2052227cb004882d7c1592f69b3d
+      internalID: -1308228752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9305
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fc5bf0a2608194d80b1236fb34f105
+      internalID: 1219450140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9142
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e638c2439890e46830165978f51829
+      internalID: 303635636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8979
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb582be747ea758418d4b45338bd2674
+      internalID: -956719051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8816
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf5dee7dfc0de940bce6a5859dc89fa
+      internalID: -433809530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8653
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546e40d1e1b308b46a873a89e3950f05
+      internalID: 1166400399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8490
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16e0faf2e6b7344287b2a9eb0879f2e
+      internalID: -1484717518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8327
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f3de77791926740a53b2442ca9f27c
+      internalID: 1130485969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8164
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3940ea5f1af7e9b40bdec1651420d379
+      internalID: -7728297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8001
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a919860d033c5c49b4b52344895b863
+      internalID: 2068588481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7838
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4620d01adc9b1e64caafb4a0b6cf3841
+      internalID: -1855020546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7675
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c25f3222b6d3f4fba1b223ac684dfb
+      internalID: -1330259196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7512
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e993ed29e8f9cf64e9d1ed8dc64a1d37
+      internalID: 1306855570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7349
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34d4d27209401e4d84d79d0d0ba5eba
+      internalID: -1113587801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7186
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a4155494be1734bbe949b678343e9a
+      internalID: 243135006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7023
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0434f462d5b6134e9025a47a7ee6605
+      internalID: 366728193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6860
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a213599768d3b3d4da12bf73e2e7f92b
+      internalID: -798406645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6697
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6eed09949999fa42bfa9d86c8412759
+      internalID: -1080267867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6534
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84f16e9d16cf1f47a778b07869253ef
+      internalID: 1558673797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6371
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09984dbc3f1b1774eb2a66c194dda104
+      internalID: -739232788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6208
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce980f9e3b671cb47894fa754ab7fdb5
+      internalID: 1103538832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6045
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accb053d58cad5a489d2c8546ff371ba
+      internalID: 1933567825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5882
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b343133b1044849919c78cceb1db09
+      internalID: 2106596826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5719
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b8b16e58fab704484c6cd0b5890957
+      internalID: -1333367551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5556
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdd53e7e44017f4e93aa9bfe25f5ade
+      internalID: 174356172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5393
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d646fc482ac1cb42a52464a27d17b2a
+      internalID: 1559658525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5230
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5963015fbb483444b9374b1d1af5a793
+      internalID: 955722948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5067
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9772b922aeea5b4419ff123458cba5ca
+      internalID: 637843567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4904
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974b445c97560804d96ecb4f48debb7e
+      internalID: 1844171513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4741
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1553006401467734db17958ba99ecf07
+      internalID: -58736226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4578
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c68b8791db2c144906c23bcd0d897a
+      internalID: -1708219040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4415
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66777d6f464903e49a25df835e8a1a73
+      internalID: -743144950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4252
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f559c601d97e8284fa766cbc867efcff
+      internalID: 1493433069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4089
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfd890b281c4214b89a8445e58fde0a
+      internalID: 551651320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3926
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0c1d1abbe3068439a09d6925c729fa
+      internalID: 850079244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3763
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae3966aca3b68748a6cd254ddf96ad0
+      internalID: -1695044207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4413825848a7a840b155f80a7910e52
+      internalID: 124336228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3437
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ff38ecd2ed9544bae09d0aad62bcd7
+      internalID: -1957483893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3274
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdc1d3ce110b004eb6fc399e153538f
+      internalID: -1650965381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3111
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb191f60e6949174f8b9b65b4cd557d7
+      internalID: -652838662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2948
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb80b8c7f526cd47a5c4e4ae3f98423
+      internalID: -224326867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2785
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b317b2bf373da324f808b51cec0fd061
+      internalID: 211417785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2622
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ce27bd6ff69a846b98fb355ba989da
+      internalID: -1878282509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2459
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717f390a3b34c0343a2e86cee958afb5
+      internalID: 1244580289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b70f06df792fc488292eca4660a84e
+      internalID: -86286158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2133
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44589e14a0a74104daa8f765b5fd8f96
+      internalID: 737566868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1970
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f61b1ad6cb59c478aeba24be8f050c
+      internalID: -2028967617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1807
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f6b4678f84a384e9cc155b35a314c0
+      internalID: 1373027386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1644
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5ae6c2dbb25b84aa9ed931affdc38b
+      internalID: -150109750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1481
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b192c6260817e04aa7b0f234358166d
+      internalID: 800591059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1318
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52991174125542648b67d904ce556df9
+      internalID: 600228212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1155
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44685bb1bbac4146a10c30c7ea89d87
+      internalID: 2069564071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd6bae72182bb64ea3a29d10864411a
+      internalID: 158618742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 829
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6173e6c249aef5849846ce6e2a018170
+      internalID: 818853933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 666
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ab6b641b32b3148af517da128af242
+      internalID: 1984521547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 503
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c794140f0415f4c8a71cfdf7c52fc5
+      internalID: 730335353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98321399090b0a6409ed6211a9ed8e20
+      internalID: 1175859431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be337d59567daf488d525b7037518df
+      internalID: -986009171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warp Room Lens Flare_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 256
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1447e848bdb0a04eae62df146d40b85
+      internalID: 2044429964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Warp Room Lens Flare_27: 1559658525
+      Warp Room Lens Flare_1: -2126017747
+      Warp Room Lens Flare_2: -1308228752
+      Warp Room Lens Flare_34: 1493433069
+      Warp Room Lens Flare_40: -1650965381
+      Warp Room Lens Flare_55: 818853933
+      Warp Room Lens Flare_50: -150109750
+      Warp Room Lens Flare_60: 2044429964
+      Warp Room Lens Flare_22: 1103538832
+      Warp Room Lens Flare_57: 730335353
+      Warp Room Lens Flare_26: 174356172
+      Warp Room Lens Flare_41: -652838662
+      Warp Room Lens Flare_46: -86286158
+      Warp Room Lens Flare_31: -58736226
+      Warp Room Lens Flare_58: 1175859431
+      Warp Room Lens Flare_52: 600228212
+      Warp Room Lens Flare_30: 1844171513
+      Warp Room Lens Flare_12: -1855020546
+      Warp Room Lens Flare_6: -433809530
+      Warp Room Lens Flare_36: 850079244
+      Warp Room Lens Flare_32: -1708219040
+      Warp Room Lens Flare_37: -1695044207
+      Warp Room Lens Flare_38: 124336228
+      Warp Room Lens Flare_4: 303635636
+      Warp Room Lens Flare_35: 551651320
+      Warp Room Lens Flare_16: 243135006
+      Warp Room Lens Flare_20: 1558673797
+      Warp Room Lens Flare_19: -1080267867
+      Warp Room Lens Flare_8: -1484717518
+      Warp Room Lens Flare_9: 1130485969
+      Warp Room Lens Flare_7: 1166400399
+      Warp Room Lens Flare_25: -1333367551
+      Warp Room Lens Flare_11: 2068588481
+      Warp Room Lens Flare_43: 211417785
+      Warp Room Lens Flare_23: 1933567825
+      Warp Room Lens Flare_48: -2028967617
+      Warp Room Lens Flare_5: -956719051
+      Warp Room Lens Flare_56: 1984521547
+      Warp Room Lens Flare_44: -1878282509
+      Warp Room Lens Flare_3: 1219450140
+      Warp Room Lens Flare_13: -1330259196
+      Warp Room Lens Flare_28: 955722948
+      Warp Room Lens Flare_0: 1020117266
+      Warp Room Lens Flare_59: -986009171
+      Warp Room Lens Flare_29: 637843567
+      Warp Room Lens Flare_39: -1957483893
+      Warp Room Lens Flare_18: -798406645
+      Warp Room Lens Flare_21: -739232788
+      Warp Room Lens Flare_24: 2106596826
+      Warp Room Lens Flare_15: -1113587801
+      Warp Room Lens Flare_49: 1373027386
+      Warp Room Lens Flare_14: 1306855570
+      Warp Room Lens Flare_33: -743144950
+      Warp Room Lens Flare_47: 737566868
+      Warp Room Lens Flare_54: 158618742
+      Warp Room Lens Flare_42: -224326867
+      Warp Room Lens Flare_51: 800591059
+      Warp Room Lens Flare_10: -7728297
+      Warp Room Lens Flare_53: 2069564071
+      Warp Room Lens Flare_45: 1244580289
+      Warp Room Lens Flare_17: 366728193
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
