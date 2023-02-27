@@ -50,19 +50,16 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            // Cycle through the player's equipped weapons
-            _currentWeaponIndex++;
-            if (_currentWeaponIndex >= _weapons.Count)
-            {
-                _currentWeaponIndex = 0;
-            }
-
+            _currentWeaponIndex = (_currentWeaponIndex + 1) % _weapons.Count;
             _currentWeapon = _weapons[_currentWeaponIndex];
         }
 
         if (Input.GetButtonDown("Fire1"))
         {
-            _currentWeapon.Fire();
+            if (_currentWeapon)
+            {
+                _currentWeapon.Fire();
+            }
         }
     }
 
@@ -77,7 +74,7 @@ public class Player : MonoBehaviour
     {
         Weapon newWeapon = other.GetComponent<Weapon>();
 
-        if (newWeapon != null)
+        if (newWeapon != null && !_weapons.Contains(newWeapon))
         {
             // Add the new weapon to the player's list of weapons
             _weapons.Add(newWeapon);
