@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class MeleeWeapon : Weapon
 {
-    public float swingTime;
-    // Start is called before the first frame update
+    private Animator _animator;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _animator = GetComponent<Animator>();
     }
 
     public override void Fire()
     {
         base.Fire();
+
+        _animator.SetTrigger("isAttacking");
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _range);
 
@@ -29,15 +25,8 @@ public class MeleeWeapon : Weapon
 
             if (enemy != null)
             {
-                Debug.Log("Guitar hit on " + enemy.name);
                 enemy.TakeDamage(_damage);
             }
         }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _range);
     }
 }

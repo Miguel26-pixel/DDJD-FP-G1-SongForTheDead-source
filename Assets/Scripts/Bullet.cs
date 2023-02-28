@@ -22,7 +22,6 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log("ola2");
     }
 
     public float getSpeed()
