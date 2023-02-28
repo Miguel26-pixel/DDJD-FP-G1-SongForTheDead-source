@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 
-public class MiniGhost : MonoBehaviour
+public class UglyGhost : MonoBehaviour
 {
     public float speed;
     public float checkRadius;
@@ -12,7 +11,6 @@ public class MiniGhost : MonoBehaviour
     public bool isToAttack = false;
 
     public bool shouldRotate;
-    public bool destroy = false;
 
     public LayerMask whatIsPlayer;
 
@@ -29,10 +27,7 @@ public class MiniGhost : MonoBehaviour
             _health = value;
 
             if(_health <= 0) {
-                anim.SetTrigger("Death");
-                anim.SetBool("Destroy", true);
-                destroy = true;
-
+                Destroy(gameObject);
             }
         }
         get{
@@ -40,14 +35,13 @@ public class MiniGhost : MonoBehaviour
         }
     }
 
-    public float _health = 3;
+    public float _health = 5;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-        anim.SetBool("isAlive", true);
     }
 
     private void Update()
@@ -74,15 +68,11 @@ public class MiniGhost : MonoBehaviour
 
         if(isInChaseRange && !isInAttackRange)
         {
-            anim.SetBool("isToAttack", false);
             MoveCharacter(movement);
         }
         if(isInAttackRange)
         {
-            anim.SetBool("isToAttack", true);
-        }
-        if(destroy){
-            Destroy(gameObject);
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -92,9 +82,6 @@ public class MiniGhost : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.otherRigidbody == GameObject.FindWithTag("Bullets").GetComponent<Rigidbody>()){
-            Health -= 1;
-        }
+        Health -= 1;
     }
-
 }

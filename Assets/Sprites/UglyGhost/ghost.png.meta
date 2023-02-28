@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37c659787714e9849bfb5103b1e021a4
+guid: fb1cc0719847b2e43b1d7d0445006f1f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,202 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obelisk_effects_0
+      name: ghost_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc636f04139d2634facc1adf44cf4158
+      internalID: -594167771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 138
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c220560ae6f08940b116e48529d09e7
+      internalID: -508621327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 138
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa71ca79edb5aea4eb4b486d26eafb25
+      internalID: -1079386471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559cdf14be76c2340b1fc8bbba1f24f8
+      internalID: -730697999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 92
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61643ad4e6a8a04faecb5a9ae87f210
+      internalID: -1088131324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 92
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0391b966a149cb4884e98ed808300bb
+      internalID: -108459193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b6cbe97c6d54448be6f530c1be987c
+      internalID: -1384178634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 46
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c807934d04b9bb741b29c2d05ff0c597
+      internalID: 1242497292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 46
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43485efca021f0d4d958612640dce0cd
+      internalID: 2085783371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 190
-        height: 380
+        width: 40
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b09eacf8de5dc4eb333738bc036691
-      internalID: -368319105
+      spriteID: 7691501eb53bf0c46a86ba52644f6669
+      internalID: -1850737336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obelisk_effects_1
+      name: ghost_10
       rect:
         serializedVersion: 2
-        x: 190
+        x: 40
         y: 0
-        width: 190
-        height: 380
+        width: 40
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e7e15a58bac9545bd56bbc53e2f4c2
-      internalID: -595270953
+      spriteID: 92c1180ad1621e04fba5f4739be83020
+      internalID: 1561673042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obelisk_effects_2
+      name: ghost_11
       rect:
         serializedVersion: 2
-        x: 380
+        x: 80
         y: 0
-        width: 190
-        height: 380
+        width: 40
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,239 +362,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c1d505d531634e48a7f807b4355675b
-      internalID: -350660824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_3
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f4e996d9af15a540947dc8ef549c2ed
-      internalID: -1655642335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_4
-      rect:
-        serializedVersion: 2
-        x: 760
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4277a406ad3ee5d44b949a42c36d1df5
-      internalID: -2143894490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_5
-      rect:
-        serializedVersion: 2
-        x: 950
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c650f0b146be9140aeb40f191dbd790
-      internalID: -793144728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_6
-      rect:
-        serializedVersion: 2
-        x: 1140
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b783e4352a3254240a57676757e5d58a
-      internalID: -2082583440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_7
-      rect:
-        serializedVersion: 2
-        x: 1330
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87afcde3869b690429c1666c0e5ce1d6
-      internalID: -1539675302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_8
-      rect:
-        serializedVersion: 2
-        x: 1520
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a771814b18195548abaac2684957891
-      internalID: -1948781789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_9
-      rect:
-        serializedVersion: 2
-        x: 1710
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa6989f5390823e4297c27f09f6c1f97
-      internalID: -990814758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_10
-      rect:
-        serializedVersion: 2
-        x: 1900
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 644cb1a52da5569478e078d0c2c9baf3
-      internalID: 586212483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_11
-      rect:
-        serializedVersion: 2
-        x: 2090
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cb04b12d452f94438c9555aa001d943
-      internalID: 1733526704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_12
-      rect:
-        serializedVersion: 2
-        x: 2280
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884fb3d2fd4fc7342bec9b47f09f12e3
-      internalID: 1469683242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obelisk_effects_13
-      rect:
-        serializedVersion: 2
-        x: 2470
-        y: 0
-        width: 190
-        height: 380
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2584cac809db266418bdde0446cc66f4
-      internalID: 902807987
+      spriteID: e0305301df82d024aa77ed619de27bc0
+      internalID: -875493128
       vertices: []
       indices: 
       edges: []
@@ -421,20 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Obelisk_effects_6: -2082583440
-      Obelisk_effects_1: -595270953
-      Obelisk_effects_2: -350660824
-      Obelisk_effects_11: 1733526704
-      Obelisk_effects_3: -1655642335
-      Obelisk_effects_7: -1539675302
-      Obelisk_effects_5: -793144728
-      Obelisk_effects_13: 902807987
-      Obelisk_effects_10: 586212483
-      Obelisk_effects_0: -368319105
-      Obelisk_effects_8: -1948781789
-      Obelisk_effects_4: -2143894490
-      Obelisk_effects_9: -990814758
-      Obelisk_effects_12: 1469683242
+      ghost_5: -108459193
+      ghost_0: -594167771
+      ghost_7: 1242497292
+      ghost_10: 1561673042
+      ghost_11: -875493128
+      ghost_8: 2085783371
+      ghost_1: -508621327
+      ghost_9: -1850737336
+      ghost_3: -730697999
+      ghost_4: -1088131324
+      ghost_2: -1079386471
+      ghost_6: -1384178634
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
