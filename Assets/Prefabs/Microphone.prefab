@@ -129,7 +129,7 @@ MonoBehaviour:
   _range: 3
   _fireRate: 10
   _projectilePrefab: {fileID: 4058330902315117233, guid: ad2ee17f10e61674291501869bea5f9e, type: 3}
-  _firePoint: {fileID: 0}
+  _firePoint: {fileID: 6053136775691442457}
 --- !u!1 &6053136775691442456
 GameObject:
   m_ObjectHideFlags: 0

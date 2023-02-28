@@ -41,6 +41,8 @@ public class MiniGhost : MonoBehaviour
     }
 
     public float _health = 3;
+    public ScoreSystem _scoreSystem;
+
 
     private void Start()
     {
@@ -48,6 +50,8 @@ public class MiniGhost : MonoBehaviour
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
         anim.SetBool("isAlive", true);
+        _scoreSystem = FindObjectOfType<ScoreSystem>();
+
     }
 
     private void Update()
@@ -82,6 +86,7 @@ public class MiniGhost : MonoBehaviour
             anim.SetBool("isToAttack", true);
         }
         if(destroy){
+            _scoreSystem.IncrementScore();
             Destroy(gameObject);
         }
     }
@@ -96,8 +101,8 @@ public class MiniGhost : MonoBehaviour
         Health -= damage;
     }
 
+
     private void OnCollisionEnter2D(Collision2D other) {
-        Debug.Log("ola");
         Health -= 1;
     }
 
