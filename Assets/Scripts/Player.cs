@@ -3,6 +3,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
+    public Camera cam1;
+    public Camera cam2;
     // Moving
     private Animator _animator;
     private Rigidbody2D _rb;
@@ -27,7 +29,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        _myScreenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+        if(cam1.enabled){
+            _myScreenPos = cam1.WorldToScreenPoint(this.transform.position);
+        } else {
+            _myScreenPos = cam2.WorldToScreenPoint(this.transform.position);
+        }
 
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");

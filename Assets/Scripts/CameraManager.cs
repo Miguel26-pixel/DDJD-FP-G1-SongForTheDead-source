@@ -4,25 +4,16 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
+    public GameObject cam1;
+    public GameObject cam2;
 
-    private Transform target;
-    private Transform player;
-
-    void Awake()
+    void Update()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        if(Input.GetButtonDown("StartGame"))
+        {
+            cam1.SetActive(false);
+            cam2.SetActive(true);
+        }
     }
-
-    void FixedUpdate()
-    {
-        MoveCam();
-    }
-
-    public void MoveCam()
-    {
-        Vector3 newPos = new Vector3(target.position.x, target.position.y, -10);
-        transform.position = Vector3.MoveTowards(transform.position, newPos, speed * Time.deltaTime);
-    }
+        
 }

@@ -92,9 +92,7 @@ public class MiniGhost : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.otherRigidbody == GameObject.FindWithTag("Bullets").GetComponent<Rigidbody>()){
-            Health -= 1;
-        }
+        Health -= 1;
     }
 
 }
