@@ -12,11 +12,11 @@ public class MiniGhost : MonoBehaviour
     public bool isToAttack = false;
 
     public bool shouldRotate;
-    public bool destroy = false;
 
     public LayerMask whatIsPlayer;
 
     private Transform target;
+    [SerializeField]
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 movement;
@@ -24,15 +24,18 @@ public class MiniGhost : MonoBehaviour
 
     private bool isInChaseRange;
     private bool isInAttackRange;
+
+    public ScoreSystem _scoreSystem;
+
+    public float _health = 3;
+
     public float Health {
         set {
             _health = value;
 
             if(_health <= 0) {
-                anim.SetTrigger("Death");
-                anim.SetBool("Destroy", true);
-                destroy = true;
-
+                _scoreSystem.IncrementScore();
+                Destroy(gameObject);
             }
         }
         get{
@@ -40,14 +43,14 @@ public class MiniGhost : MonoBehaviour
         }
     }
 
-    public float _health = 3;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
         anim.SetBool("isAlive", true);
+        _scoreSystem = FindObjectOfType<ScoreSystem>();
+
     }
 
     private void Update()
@@ -81,9 +84,6 @@ public class MiniGhost : MonoBehaviour
         {
             anim.SetBool("isToAttack", true);
         }
-        if(destroy){
-            Destroy(gameObject);
-        }
     }
 
     private void MoveCharacter(Vector2 dir)
@@ -91,8 +91,18 @@ public class MiniGhost : MonoBehaviour
         rb.MovePosition((Vector2)transform.position + (dir*speed*Time.deltaTime));
     }
 
+    public void TakeDamage(float damage)
+    {
+        Health -= damage;
+    }
+
+
     private void OnCollisionEnter2D(Collision2D other) {
-        Health -= 1;
+        
+        if (other.gameObject.CompareTag("Bullets"))
+        {
+            Health -= 1;
+        }
     }
 
 }

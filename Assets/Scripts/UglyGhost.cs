@@ -82,6 +82,10 @@ public class UglyGhost : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        Health -= 1;
+        
+        if (other.gameObject.CompareTag("Bullets"))
+        {
+            Health -= 1;
+        }
     }
 }

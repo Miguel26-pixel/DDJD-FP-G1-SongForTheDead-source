@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     private GameObject uglyghostPrefab;
 
     [SerializeField]
-    private float minighostInterval = 1.5f;
+    private float minighostInterval = 1f;
     [SerializeField]
     private float uglyghostInterval = 2f;
 

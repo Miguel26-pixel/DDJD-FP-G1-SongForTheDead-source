@@ -7,6 +7,8 @@ TagManager:
   - Obelisk
   - Bullets
   - Camera
+  - Obelisk1
+  - Obelisk2
   layers:
   - Default
   - TransparentFX
