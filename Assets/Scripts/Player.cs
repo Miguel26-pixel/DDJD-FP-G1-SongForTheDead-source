@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     public Vector3 _speed = new Vector3(10, 10);
     private bool _facingRight = true;
 
-
     void Start()
     {
         _animator = GetComponent<Animator>();
