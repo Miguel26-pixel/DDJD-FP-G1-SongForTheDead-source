@@ -8,6 +8,7 @@ public class MiniGhost : MonoBehaviour
     public float speed;
     public float checkRadius;
     public float attackRadius;
+    public float damage;
     public bool isAlive;
     public bool isToAttack = false;
 
@@ -52,16 +53,19 @@ public class MiniGhost : MonoBehaviour
 
     private void Update()
     {
-
         anim.SetBool("isRunning", isInChaseRange);
 
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
 
-        dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
-        dir.Normalize();
-        movement = dir;
+        if (target != null)
+        {
+            dir = target.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            dir.Normalize();
+            movement = dir;
+        }
+
         if(shouldRotate)
         {
             anim.SetFloat("x", dir.x);
@@ -91,10 +95,17 @@ public class MiniGhost : MonoBehaviour
         rb.MovePosition((Vector2)transform.position + (dir*speed*Time.deltaTime));
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if(other.otherRigidbody == GameObject.FindWithTag("Bullets").GetComponent<Rigidbody>()){
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Bullets"))
+        {
             Health -= 1;
         }
+        else if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<Player>().TakeDamage(damage);
+        }
     }
+
 
 }

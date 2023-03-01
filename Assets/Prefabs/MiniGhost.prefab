@@ -160,6 +160,7 @@ MonoBehaviour:
   speed: 4
   checkRadius: 5
   attackRadius: 2
+  damage: 2
   isAlive: 1
   isToAttack: 0
   shouldRotate: 1

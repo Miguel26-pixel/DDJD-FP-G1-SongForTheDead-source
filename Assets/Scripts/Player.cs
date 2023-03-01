@@ -18,6 +18,9 @@ public class Player : MonoBehaviour
     private Vector3 _myScreenPos;
     private float _shootingSpeed;
 
+    // Stats
+    private float _health = 5;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -50,6 +53,22 @@ public class Player : MonoBehaviour
         {
             Bullet bullet = Instantiate(_projectilePrefab, transform.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootingDirection.x, shootingDirection.y) * _shootingSpeed;
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        _health -= damage;
+
+        Debug.Log("health at " + _health);
+
+        if (_health <= 0)
+        {
+            Debug.Log("Player died");
+            if (gameObject.activeSelf)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
