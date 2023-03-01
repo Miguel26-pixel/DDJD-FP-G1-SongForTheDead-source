@@ -60,15 +60,10 @@ public class Player : MonoBehaviour
     {
         _health -= damage;
 
-        Debug.Log("health at " + _health);
-
         if (_health <= 0)
         {
             Debug.Log("Player died");
-            if (gameObject.activeSelf)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 
