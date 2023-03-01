@@ -16,6 +16,7 @@ public class MiniGhost : MonoBehaviour
     public bool destroy = false;
 
     public LayerMask whatIsPlayer;
+    private Player _playerTarget;
 
     private Transform target;
     private Rigidbody2D rb;
@@ -84,6 +85,10 @@ public class MiniGhost : MonoBehaviour
         if(isInAttackRange)
         {
             anim.SetBool("isToAttack", true);
+            if (_playerTarget != null)
+            {
+                _playerTarget.TakeDamage(damage);
+            }
         }
         if(destroy){
             Destroy(gameObject);
@@ -103,7 +108,7 @@ public class MiniGhost : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Player>().TakeDamage(damage);
+            _playerTarget = other.gameObject.GetComponent<Player>();
         }
     }
 

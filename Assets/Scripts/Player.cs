@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         _health -= damage;
+        Debug.Log("Health: "+ _health.ToString());
 
         if (_health <= 0)
         {
