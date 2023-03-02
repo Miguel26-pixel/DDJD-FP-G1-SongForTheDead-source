@@ -48,7 +48,11 @@ public class UglyGhost : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        target = GameObject.FindWithTag("Player").transform;
+        var player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            target = player.transform;
+        }
         _scoreSystem = FindObjectOfType<ScoreSystem>();
     }
 
@@ -60,15 +64,19 @@ public class UglyGhost : MonoBehaviour
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
 
-        dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        dir.Normalize();
-        movement = dir;
-        if (shouldRotate)
+        if (target != null)
         {
-            anim.SetFloat("x", dir.x);
-            anim.SetFloat("y", dir.y);
+            dir = target.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            dir.Normalize();
+            movement = dir;
+            if (shouldRotate)
+            {
+                anim.SetFloat("x", dir.x);
+                anim.SetFloat("y", dir.y);
+            }
         }
+
     }
 
     private void FixedUpdate()
@@ -88,6 +96,12 @@ public class UglyGhost : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
     }
+
+    public void TakeDamage(float damage)
+    {
+        Health -= damage;
+    }
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {

@@ -22,10 +22,15 @@ public class MeleeWeapon : Weapon
         foreach (Collider2D collider in colliders)
         {
             MiniGhost enemy = collider.GetComponent<MiniGhost>();
+            UglyGhost enemy2 = collider.GetComponent<UglyGhost>();
 
             if (enemy != null)
             {
                 enemy.TakeDamage(_damage);
+            }
+            if (enemy2 != null)
+            {
+                enemy2.TakeDamage(_damage);
             }
         }
     }
