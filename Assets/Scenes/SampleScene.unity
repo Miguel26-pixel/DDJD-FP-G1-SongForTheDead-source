@@ -329,9 +329,10 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1073854573
-GameObject:
+--- !u!1001 &1596366884
+PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -498,6 +499,62 @@ MonoBehaviour:
     m_Bits: 64
   dir: {x: 0, y: 0, z: 0}
   _health: 3
+=======
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 199516362743692298, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_Name
+      value: MiniGhost
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.357475
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8869865
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9298625
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+>>>>>>> feat/damage-health
 --- !u!1 &1765004800
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +661,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 2
+>>>>>>> feat/damage-health
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1765004805
 Rigidbody2D:

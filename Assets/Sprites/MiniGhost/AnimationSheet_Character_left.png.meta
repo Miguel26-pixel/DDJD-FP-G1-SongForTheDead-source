@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1202,8 +1202,8 @@ TextureImporter:
       AnimationSheet_Character_left_42: 2100727783
       AnimationSheet_Character_left_7: -438089985
       AnimationSheet_Character_left_14: 1921918660
-      AnimationSheet_Character_left_17: -947822571
       AnimationSheet_Character_left_44: 700697286
+      AnimationSheet_Character_left_17: -947822571
       AnimationSheet_Character_left_18: -678627450
       AnimationSheet_Character_left_36: 1615780198
       AnimationSheet_Character_left_21: 534044004

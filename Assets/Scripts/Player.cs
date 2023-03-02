@@ -13,6 +13,15 @@ public class Player : MonoBehaviour
     public Vector3 _speed = new Vector3(10, 10);
     private bool _facingRight = true;
 
+    // Attacking
+    [SerializeField]
+    private Bullet _projectilePrefab;
+    [SerializeField]
+    private Transform _lauchOffset;
+
+    // Stats
+    private float _health = 5;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -20,6 +29,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
@@ -59,6 +69,18 @@ public class Player : MonoBehaviour
             {
                 _currentWeapon.Fire();
             }
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        _health -= damage;
+        Debug.Log("Health: "+ _health.ToString());
+
+        if (_health <= 0)
+        {
+            Debug.Log("Player died");
+            Destroy(gameObject);
         }
     }
 
