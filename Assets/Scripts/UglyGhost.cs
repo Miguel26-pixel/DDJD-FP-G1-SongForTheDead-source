@@ -20,17 +20,24 @@ public class UglyGhost : MonoBehaviour
     private Vector2 movement;
     public Vector3 dir;
 
+    public ScoreSystem _scoreSystem;
+
     private bool isInChaseRange;
     private bool isInAttackRange;
-    public float Health {
-        set {
+    public float Health
+    {
+        set
+        {
             _health = value;
 
-            if(_health <= 0) {
+            if (_health <= 0)
+            {
+                _scoreSystem.IncrementScore();
                 Destroy(gameObject);
             }
         }
-        get{
+        get
+        {
             return _health;
         }
     }
@@ -42,6 +49,7 @@ public class UglyGhost : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
+        _scoreSystem = FindObjectOfType<ScoreSystem>();
     }
 
     private void Update()
@@ -53,10 +61,10 @@ public class UglyGhost : MonoBehaviour
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
 
         dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         dir.Normalize();
         movement = dir;
-        if(shouldRotate)
+        if (shouldRotate)
         {
             anim.SetFloat("x", dir.x);
             anim.SetFloat("y", dir.y);
@@ -66,11 +74,11 @@ public class UglyGhost : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if(isInChaseRange && !isInAttackRange)
+        if (isInChaseRange && !isInAttackRange)
         {
             MoveCharacter(movement);
         }
-        if(isInAttackRange)
+        if (isInAttackRange)
         {
             rb.velocity = Vector2.zero;
         }
@@ -78,11 +86,12 @@ public class UglyGhost : MonoBehaviour
 
     private void MoveCharacter(Vector2 dir)
     {
-        rb.MovePosition((Vector2)transform.position + (dir*speed*Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+
         if (other.gameObject.CompareTag("Bullets"))
         {
             Health -= 1;

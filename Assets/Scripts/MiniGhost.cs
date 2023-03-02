@@ -25,7 +25,7 @@ public class MiniGhost : MonoBehaviour
     private bool isInChaseRange;
     private bool isInAttackRange;
 
-    // public ScoreSystem _scoreSystem;
+    public ScoreSystem _scoreSystem;
 
     public float _health = 3;
 
@@ -34,7 +34,7 @@ public class MiniGhost : MonoBehaviour
             _health = value;
 
             if(_health <= 0) {
-                // _scoreSystem.IncrementScore();
+                _scoreSystem.IncrementScore();
                 Destroy(gameObject);
             }
         }
@@ -49,7 +49,7 @@ public class MiniGhost : MonoBehaviour
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
         anim.SetBool("isAlive", true);
-        // _scoreSystem = FindObjectOfType<ScoreSystem>();
+        _scoreSystem = FindObjectOfType<ScoreSystem>();
 
     }
 
