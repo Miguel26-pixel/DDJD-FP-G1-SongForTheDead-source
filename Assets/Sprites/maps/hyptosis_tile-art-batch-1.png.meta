@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4747,9 +4747,9 @@ TextureImporter:
       hyptosis_tile-art-batch-1_180: -628868124
       hyptosis_tile-art-batch-1_78: -1254370155
       hyptosis_tile-art-batch-1_33: -1918725862
+      hyptosis_tile-art-batch-1_106: -1704818427
       hyptosis_tile-art-batch-1_47: 1893665646
       hyptosis_tile-art-batch-1_111: 981596999
-      hyptosis_tile-art-batch-1_106: -1704818427
       hyptosis_tile-art-batch-1_114: 2115157439
       hyptosis_tile-art-batch-1_10: 1586610264
       hyptosis_tile-art-batch-1_100: -1387381915
@@ -4781,8 +4781,8 @@ TextureImporter:
       hyptosis_tile-art-batch-1_70: -499911838
       hyptosis_tile-art-batch-1_5: -1239313607
       hyptosis_tile-art-batch-1_51: 1075704571
-      hyptosis_tile-art-batch-1_7: 1904477128
       hyptosis_tile-art-batch-1_66: -686353589
+      hyptosis_tile-art-batch-1_7: 1904477128
       hyptosis_tile-art-batch-1_140: 1185740371
       hyptosis_tile-art-batch-1_13: 206030709
       hyptosis_tile-art-batch-1_113: -358198980
