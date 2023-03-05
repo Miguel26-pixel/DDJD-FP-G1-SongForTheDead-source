@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     [Range(1, 10)]
     [SerializeField] private float _lifetime = 1f;
 
+    [SerializeField] private float _damage = 1f;
+
     private Rigidbody2D _rigidbody;
 
     private void Start()
@@ -27,6 +29,16 @@ public class Bullet : MonoBehaviour
     public float getSpeed()
     {
         return _speed;
+    }
+
+    public void setDamage(float damage)
+    { 
+        _damage = damage;
+    }
+
+    public float getDamage()
+    { 
+        return _damage;
     }
 
 }

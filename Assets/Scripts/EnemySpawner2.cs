@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner2 : MonoBehaviour
@@ -16,18 +15,18 @@ public class EnemySpawner2 : MonoBehaviour
 
     private Transform target;
 
-    
+
     void Start()
     {
         StartCoroutine(spawnEnemy(minighostInterval, minighostPrefab));
-        StartCoroutine(spawnEnemy(uglyghostInterval,uglyghostPrefab));
+        StartCoroutine(spawnEnemy(uglyghostInterval, uglyghostPrefab));
         target = GameObject.FindWithTag("Obelisk2").transform;
     }
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(target.position.x + Random.Range(-1f,1), target.position.y-4, 0), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(target.position.x + Random.Range(-1f, 1), target.position.y - 4, 0), Quaternion.identity);
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 }
