@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class UglyGhost : MonoBehaviour
 {
-    public float speed;
-    public float checkRadius;
-    public float attackRadius;
-    public bool isAlive;
-    public bool isToAttack = false;
+    [SerializeField] private float speed;
+    [SerializeField] private float checkRadius;
+    [SerializeField] private float attackRadius;
+    [SerializeField] private float damage;
+    [SerializeField] private float health = 3;
+    [SerializeField] private bool shouldRotate;
 
     public bool shouldRotate;
 
@@ -108,7 +109,42 @@ public class UglyGhost : MonoBehaviour
 
         if (other.gameObject.CompareTag("Bullets"))
         {
-            Health -= 1;
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
+            TakeDamage(bullet.getDamage());
         }
+        else if (other.gameObject.CompareTag("Player"))
+        {
+
+            // Damage the player
+            playerTarget.TakeDamage(damage);
+
+            // Knockback the player
+            playerTarget = other.gameObject.GetComponent<Player>();
+
+            // Get the direction from the enemy to the player
+            Vector2 dir = (other.transform.position - transform.position).normalized;
+
+
+            playerTarget.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            playerTarget.GetComponent<Rigidbody2D>().inertia = 0;
+
+            playerTarget.GetComponent<PlayerMovement>().enabled = false;
+            Invoke("EnablePlayerControles", 0.5f); //if then amount of time is long then reduce it to the value you want.
+
+            playerTarget.GetComponent<Rigidbody2D>().AddForce(dir * knockbackForce, ForceMode2D.Impulse);
+        }
+    }
+
+
+    private void EnablePlayerControles()
+    {
+        if (playerTarget ==  null)
+        {
+            return;
+        }
+        playerTarget.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        playerTarget.GetComponent<Rigidbody2D>().angularVelocity = 0f;
+        playerTarget.GetComponent<Rigidbody2D>().inertia = 0;
+        playerTarget.GetComponent<PlayerMovement>().enabled = true;
     }
 }

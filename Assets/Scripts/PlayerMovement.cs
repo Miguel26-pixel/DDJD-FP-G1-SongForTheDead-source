@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (enabled)
         {
+            // Normalize movement vector
+            movement = movement.normalized;
+
             currentMovement = movement;
             transform.position += movement * speed * Time.deltaTime;
 
