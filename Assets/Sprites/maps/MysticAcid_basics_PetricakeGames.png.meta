@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: 5182eebb98f1e88408a6194b474baf2b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b9c72e7738f3342923bd13164b77ba
+      internalID: 1507042913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571da4f3823f9814c8beef1e206bf682
+      internalID: -963103113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e3660d6f1054b469732ddcc0a258ef
+      internalID: -97402584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933007267651c26499088a276f2922d1
+      internalID: 1136525009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d9ff7bb42aa0a4eb928811818dd6c0
+      internalID: -1000321355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e332e438e02336445af3c792a0797249
+      internalID: -2064962749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071f5652d779a4248b8c08659c61a1a0
+      internalID: 955667796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce704e129c785ed48a2e6a66f6f57e50
+      internalID: 374859562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405d1c5d20fb9ec4ea16f17094660cc0
+      internalID: 1578773657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ca4dfdc19299e4cb074ce6f0919521
+      internalID: 37729998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87031efc03bc7f547b3fd35fe194e477
+      internalID: -1731761875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9fd653bba210e4c9898f20711fca9c
+      internalID: 1925151690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153f0f96c26124148970227e556e8922
+      internalID: 1167307892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489079bfb63144c499314555b4a02cfe
+      internalID: 1597982857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b5aec1a1297ff4db29d169b2e8ebbd
+      internalID: 1173510692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5c59242cf53054b9f0380fbe54243a
+      internalID: 1313499714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925d8e41e2404064bb0c1579fea91282
+      internalID: -1387294565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96edd7415b7d0a448b76d6041070ae8c
+      internalID: -273272967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bba9a65eb6b3d54e823b57ca5dd70ce
+      internalID: -1951401492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 17
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99fb1705c4d23b4c988ac272934dbdc
+      internalID: -819377052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 17
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb8df4b34e68f446879a31871243328
+      internalID: 164928440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73600dbe7d396d94095535c525e81fa5
+      internalID: -1287919074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be47e9e110203be40a60578f21119945
+      internalID: 808905900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 17
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acebb64101faf84e90e1221c601a002
+      internalID: 1003887806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0887391fd0390d4a83b09af93d363bc
+      internalID: 898204695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbe29ead3adfe24f9c6a6ea1eb57107
+      internalID: 1296774279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbfad7dc5e2a0b48a51741435705090
+      internalID: 1998790231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72b85baa6947a5409008fff029a533e
+      internalID: -1289108229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3460552c2cf274f45aa836ecf3d0e6f3
+      internalID: -558485045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MysticAcid_basics_PetricakeGames_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a3c8f375d126b46b76000f8279a6a9
+      internalID: 313142414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MysticAcid_basics_PetricakeGames_15: 1313499714
+      MysticAcid_basics_PetricakeGames_0: 1507042913
+      MysticAcid_basics_PetricakeGames_14: 1173510692
+      MysticAcid_basics_PetricakeGames_2: -97402584
+      MysticAcid_basics_PetricakeGames_5: -2064962749
+      MysticAcid_basics_PetricakeGames_10: -1731761875
+      MysticAcid_basics_PetricakeGames_21: -1287919074
+      MysticAcid_basics_PetricakeGames_3: 1136525009
+      MysticAcid_basics_PetricakeGames_17: -273272967
+      MysticAcid_basics_PetricakeGames_27: -1289108229
+      MysticAcid_basics_PetricakeGames_26: 1998790231
+      MysticAcid_basics_PetricakeGames_9: 37729998
+      MysticAcid_basics_PetricakeGames_29: 313142414
+      MysticAcid_basics_PetricakeGames_7: 374859562
+      MysticAcid_basics_PetricakeGames_18: -1951401492
+      MysticAcid_basics_PetricakeGames_28: -558485045
+      MysticAcid_basics_PetricakeGames_22: 808905900
+      MysticAcid_basics_PetricakeGames_4: -1000321355
+      MysticAcid_basics_PetricakeGames_19: -819377052
+      MysticAcid_basics_PetricakeGames_11: 1925151690
+      MysticAcid_basics_PetricakeGames_16: -1387294565
+      MysticAcid_basics_PetricakeGames_6: 955667796
+      MysticAcid_basics_PetricakeGames_1: -963103113
+      MysticAcid_basics_PetricakeGames_25: 1296774279
+      MysticAcid_basics_PetricakeGames_13: 1597982857
+      MysticAcid_basics_PetricakeGames_20: 164928440
+      MysticAcid_basics_PetricakeGames_8: 1578773657
+      MysticAcid_basics_PetricakeGames_23: 1003887806
+      MysticAcid_basics_PetricakeGames_24: 898204695
+      MysticAcid_basics_PetricakeGames_12: 1167307892
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
