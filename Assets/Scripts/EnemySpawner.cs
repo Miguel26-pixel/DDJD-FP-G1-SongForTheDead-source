@@ -7,6 +7,8 @@ public class EnemySpawner : MonoBehaviour
     private GameObject minighostPrefab;
     [SerializeField]
     private GameObject uglyghostPrefab;
+    [SerializeField]
+    private Camera cam;
 
     [SerializeField]
     private float minighostInterval = 6f;
@@ -33,12 +35,15 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(interval);
         if (enemy != null)
         {
-            GameObject newEnemy = Instantiate(enemy, new Vector3(target.position.x + Random.Range(-1f, 1), target.position.y - 4, 0), Quaternion.identity);
-            StartCoroutine(spawnEnemy(interval, enemy));
-            GameObject newEnemy2 = Instantiate(enemy, new Vector3(target2.position.x + Random.Range(-1f, 1), target2.position.y - 4, 0), Quaternion.identity);
-            StartCoroutine(spawnEnemy(interval, enemy));
-            GameObject newEnemy3 = Instantiate(enemy, new Vector3(target3.position.x + Random.Range(-1f, 1), target3.position.y - 4, 0), Quaternion.identity);
-            StartCoroutine(spawnEnemy(interval, enemy));
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                Debug.Log("here");
+                GameObject newEnemy = Instantiate(enemy, new Vector3(target.position.x + Random.Range(-1f, 1), target.position.y - 4, 0), Quaternion.identity);
+                StartCoroutine(spawnEnemy(interval, enemy));
+                GameObject newEnemy2 = Instantiate(enemy, new Vector3(target2.position.x + Random.Range(-1f, 1), target2.position.y - 4, 0), Quaternion.identity);
+                StartCoroutine(spawnEnemy(interval, enemy));
+                GameObject newEnemy3 = Instantiate(enemy, new Vector3(target3.position.x + Random.Range(-1f, 1), target3.position.y - 4, 0), Quaternion.identity);
+                StartCoroutine(spawnEnemy(interval, enemy));
+            }
         }
     }
 }
