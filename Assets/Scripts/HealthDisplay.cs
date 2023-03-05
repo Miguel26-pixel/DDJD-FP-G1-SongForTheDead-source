@@ -27,7 +27,7 @@ public class HealthDisplay : MonoBehaviour
         currentHealth = player == null ? 0 : player.getHealth();
         for (int i = 0; i < hearts.Length; i++)
         {
-            hearts[i].sprite = i > currentHealth ? emptyHeart : fullHeart;
+            hearts[i].sprite = i >= currentHealth ? emptyHeart : fullHeart;
         }
     }
 }

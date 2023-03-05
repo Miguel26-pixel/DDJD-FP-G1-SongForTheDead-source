@@ -88974,6 +88974,10 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 1073854576}
+    - target: {fileID: 199516362743692307, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 199516362743692310, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
       propertyPath: m_RootOrder
       value: 5
