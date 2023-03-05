@@ -19,8 +19,6 @@ public class EnemySpawner : MonoBehaviour
     private Transform target2;
     private Transform target3;
 
-
-
     void Start()
     {
         StartCoroutine(spawnEnemy(minighostInterval, minighostPrefab));

@@ -26867,7 +26867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minighostPrefab: {fileID: 1073854573}
   uglyghostPrefab: {fileID: 1976885456}
-  isToStart: 0
+  cam: {fileID: 1434097211}
   minighostInterval: 6
   uglyghostInterval: 7
 --- !u!114 &1041390268
@@ -27413,7 +27413,7 @@ Camera:
   far clip plane: 1000
   field of view: 93.56637
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.2989845
   m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
