@@ -5,6 +5,7 @@ public class UglyGhost : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float checkRadius;
     [SerializeField] private float attackRadius;
+    [SerializeField] private float damage;
     [SerializeField] private float health = 3;
     [SerializeField] private bool shouldRotate;
 
@@ -70,6 +71,11 @@ public class UglyGhost : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Player"))
         {
+
+            // Damage the player
+            playerTarget.TakeDamage(damage);
+
+            // Knockback the player
             playerTarget = other.gameObject.GetComponent<Player>();
 
             // Get the direction from the enemy to the player
@@ -89,6 +95,10 @@ public class UglyGhost : MonoBehaviour
 
     private void EnablePlayerControles()
     {
+        if (playerTarget ==  null)
+        {
+            return;
+        }
         playerTarget.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         playerTarget.GetComponent<Rigidbody2D>().angularVelocity = 0f;
         playerTarget.GetComponent<Rigidbody2D>().inertia = 0;
