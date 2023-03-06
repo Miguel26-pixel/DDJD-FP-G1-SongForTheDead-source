@@ -79,7 +79,12 @@ public class Player : MonoBehaviour
         if (health <= 0f)
         {
             Debug.Log("Player died");
-            Destroy(gameObject);
+            Destroy(gameObject, 0.5f);
         }
+    }
+
+    public float getHealth()
+    {
+        return health;
     }
 }
