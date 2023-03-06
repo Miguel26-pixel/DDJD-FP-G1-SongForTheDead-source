@@ -74,6 +74,7 @@ public class Player : MonoBehaviour
         }
         else if (newPowerUp)
         {
+            Debug.Log("Picked up powerup");
             newPowerUp.Apply(this);
         }
     }
