@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraManager : MonoBehaviour
@@ -9,11 +7,11 @@ public class CameraManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("StartGame"))
+        if (Input.GetButtonDown("StartGame"))
         {
             cam1.SetActive(false);
             cam2.SetActive(true);
         }
     }
-        
+
 }

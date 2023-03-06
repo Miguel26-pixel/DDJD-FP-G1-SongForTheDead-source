@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd8b61d533123f469385b8d199354cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minighostPrefab: {fileID: 0}
-  uglyghostPrefab: {fileID: 0}
+  minighostPrefab: {fileID: 199516362743692298, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+  uglyghostPrefab: {fileID: 7865597842883457249, guid: b5fcf0c214d081a43a940fddf950000b, type: 3}
   minighostInterval: 1.5
   uglyghostInterval: 2
 --- !u!50 &1634116442422924126

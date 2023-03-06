@@ -123,14 +123,14 @@ MonoBehaviour:
   speed: 4
   checkRadius: 5
   attackRadius: 2
-  isAlive: 0
-  isToAttack: 0
+  damage: 2
+  health: 3
   shouldRotate: 1
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  dir: {x: 0, y: 0, z: 0}
-  _health: 5
+  playerTarget: {fileID: 0}
+  knockbackForce: 10
 --- !u!50 &7865597842883457252
 Rigidbody2D:
   serializedVersion: 4

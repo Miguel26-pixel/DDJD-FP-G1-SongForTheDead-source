@@ -1,125 +1,105 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 
 public class MiniGhost : MonoBehaviour
 {
-    public float speed;
-    public float checkRadius;
-    public float attackRadius;
-    public float damage;
-    public bool isAlive;
-    public bool isToAttack = false;
+    [SerializeField] private float speed;
+    [SerializeField] private float checkRadius;
+    [SerializeField] private float attackRadius;
+    [SerializeField] private float damage;
+    [SerializeField] private float health = 3;
+    [SerializeField] private bool shouldRotate;
 
-    public bool shouldRotate;
+    [SerializeField] private LayerMask whatIsPlayer;
+    [SerializeField] private Player playerTarget;
 
-    public LayerMask whatIsPlayer;
-    private Player _playerTarget;
-
-    private Transform target;
-    [SerializeField]
     private Rigidbody2D rb;
     private Animator anim;
-    private Vector2 movement;
-    public Vector3 dir;
 
     private bool isInChaseRange;
     private bool isInAttackRange;
 
-    public ScoreSystem _scoreSystem;
+    private ScoreSystem scoreSystem;
 
-    public float _health = 3;
-
-    public float Health {
-        set {
-            _health = value;
-
-            if(_health <= 0) {
-                _scoreSystem.IncrementScore();
-                Destroy(gameObject);
-            }
-        }
-        get{
-            return _health;
-        }
-    }
+    [SerializeField] private float timeBetweenAttacks = 1.5f;
+    private float attackTimer = 0f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        var player = GameObject.FindWithTag("Player");
-        if (player != null)
-        {
-            target = player.transform;
-        }
+        playerTarget = GameObject.FindWithTag("Player")?.GetComponent<Player>();
         anim.SetBool("isAlive", true);
-        _scoreSystem = FindObjectOfType<ScoreSystem>();
-
+        scoreSystem = FindObjectOfType<ScoreSystem>();
     }
 
     private void Update()
     {
-        anim.SetBool("isRunning", isInChaseRange);
-
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
 
-        if (target != null)
+        if (playerTarget != null)
         {
-            dir = target.position - transform.position;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            var dir = playerTarget.transform.position - transform.position;
             dir.Normalize();
-            movement = dir;
+            rb.velocity = dir * speed;
         }
 
-        if(shouldRotate)
+        if (shouldRotate)
         {
-            anim.SetFloat("x", dir.x);
-            anim.SetFloat("y", dir.y);
+            anim.SetFloat("x", rb.velocity.x);
+            anim.SetFloat("y", rb.velocity.y);
         }
-    }
 
-    private void FixedUpdate()
-    {
+        anim.SetBool("isRunning", isInChaseRange);
+        anim.SetBool("isToAttack", isInAttackRange);
 
-        if(isInChaseRange && !isInAttackRange)
+        attackTimer += Time.deltaTime;
+
+        if (attackTimer >= timeBetweenAttacks)
         {
-            anim.SetBool("isToAttack", false);
-            MoveCharacter(movement);
+            Attack();
+            attackTimer = 0f;
         }
-        if(isInAttackRange)
-        {
-            anim.SetBool("isToAttack", true);
-            if (_playerTarget != null)
-            {
-                _playerTarget.TakeDamage(damage);
-            }
-        }
-    }
-
-    private void MoveCharacter(Vector2 dir)
-    {
-        rb.MovePosition((Vector2)transform.position + (dir*speed*Time.deltaTime));
     }
 
     public void TakeDamage(float damage)
     {
-        Health -= damage;
+        health -= damage;
+
+        if (health <= 0)
+        {
+            scoreSystem.IncrementScore();
+            Destroy(gameObject);
+        }
     }
 
-
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnCollisionEnter2D(Collision2D other)
+    {
         if (other.gameObject.CompareTag("Bullets"))
         {
-            Health -= 1;
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
+            TakeDamage(bullet.getDamage());
         }
         else if (other.gameObject.CompareTag("Player"))
         {
-            _playerTarget = other.gameObject.GetComponent<Player>();
+            playerTarget = other.gameObject.GetComponent<Player>();
         }
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, checkRadius);
 
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackRadius);
+    }
+
+    void Attack()
+    {
+        if (isInAttackRange && playerTarget != null)
+        {
+            playerTarget.TakeDamage(damage);
+        }
+    }
 }

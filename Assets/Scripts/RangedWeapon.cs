@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RangedWeapon : Weapon
@@ -16,5 +14,6 @@ public class RangedWeapon : Weapon
 
         GameObject bullet = Instantiate(_projectilePrefab, _firePoint.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootingDirection.x, shootingDirection.y) * _fireRate;
+        bullet.GetComponent<Bullet>().setDamage(_damage);
     }
 }

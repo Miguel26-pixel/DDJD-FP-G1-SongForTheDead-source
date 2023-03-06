@@ -3,102 +3,62 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Weapons
-    public List<Weapon> _weapons;
-    public Weapon _currentWeapon;
-    public int _currentWeaponIndex = 0;
+    [Header("Weapons")]
+    [SerializeField] private List<Weapon> weapons = new List<Weapon>();
+    [SerializeField] private Weapon currentWeapon = null;
 
-    // Moving
-    private Animator _animator;
-    public Vector3 _speed = new Vector3(10, 10);
-    private bool _facingRight = true;
+    [Header("Stats")]
+    [SerializeField] private float health = 5f;
 
-    // Attacking
-    [SerializeField]
-    private Bullet _projectilePrefab;
-    [SerializeField]
-    private Transform _lauchOffset;
+    private PlayerMovement playerMovement = null;
 
-    // Stats
-    private float _health = 5;
+    public static bool playerControles = true;
 
-    void Start()
+    private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
-    void Update()
+    private void Update()
     {
-
+        // Movement
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(inputX, inputY, 0f);
+        playerMovement.Move(movement);
 
-        Vector3 movement = new Vector3(_speed.x * inputX, _speed.y * inputY, 0);
-
-        _animator.SetBool("isWalking", movement.x != 0 || movement.y != 0);
-
-
-        if ((_facingRight && movement.x < 0) || (!_facingRight && movement.x > 0))
+        // Weapon selection
+        if (Input.GetKeyDown(KeyCode.Tab) && weapons.Count > 0)
         {
-            Flip();
+            currentWeapon.gameObject.SetActive(false);
+            int nextIndex = (weapons.IndexOf(currentWeapon) + 1) % weapons.Count;
+            currentWeapon = weapons[nextIndex];
+            currentWeapon.gameObject.SetActive(true);
         }
 
-        transform.position += movement * Time.deltaTime;
-
-        // Hide all weapons except the current one
-        for (int i = 0; i < _weapons.Count; i++)
-        {
-            _weapons[i].gameObject.SetActive(i == _currentWeaponIndex);
-        }
-
-        // Update current weapon
-        if (_weapons.Count > 0)
-        {
-            _currentWeapon = _weapons[_currentWeaponIndex];
-        }
-
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            _currentWeaponIndex = (_currentWeaponIndex + 1) % _weapons.Count;
-            _currentWeapon = _weapons[_currentWeaponIndex];
-        }
-
+        // Weapon firing
         if (Input.GetButtonDown("Fire1"))
         {
-            if (_currentWeapon)
+            if (currentWeapon)
             {
-                _currentWeapon.Fire();
+                currentWeapon.Fire();
             }
         }
     }
 
-    public void TakeDamage(float damage)
-    {
-        _health -= damage;
-        Debug.Log("Health: "+ _health.ToString());
-
-        if (_health <= 0)
-        {
-            Debug.Log("Player died");
-            Destroy(gameObject);
-        }
-    }
-
-    void Flip()
-    {
-        _facingRight = !_facingRight;
-
-        transform.Rotate(0f, 180f, 0f);
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Weapon newWeapon = other.GetComponent<Weapon>();
-
-        if (newWeapon != null && !_weapons.Contains(newWeapon))
+        if (newWeapon && !weapons.Contains(newWeapon))
         {
+            // Deactivate the current weapon, if there is one
+            if (currentWeapon)
+            {
+                currentWeapon.gameObject.SetActive(false);
+            }
+
             // Add the new weapon to the player's list of weapons
-            _weapons.Add(newWeapon);
+            weapons.Add(newWeapon);
 
             // Set the weapon as a child of the player and position/rotate it
             newWeapon.transform.SetParent(transform);
@@ -106,8 +66,20 @@ public class Player : MonoBehaviour
             newWeapon.transform.localRotation = Quaternion.identity;
 
             // Make the newly acquired weapon the current selected one
-            _currentWeaponIndex = _weapons.IndexOf(newWeapon);
+            currentWeapon = newWeapon;
+            currentWeapon.gameObject.SetActive(true);
+        }
+    }
 
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        Debug.Log("Health: " + health.ToString());
+        if (health <= 0f)
+        {
+            Debug.Log("Player died");
+            Destroy(gameObject);
         }
     }
 }
