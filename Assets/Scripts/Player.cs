@@ -50,6 +50,8 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Weapon newWeapon = other.GetComponent<Weapon>();
+        PowerUp newPowerUp = other.GetComponent<PowerUp>();
+
         if (newWeapon && !weapons.Contains(newWeapon))
         {
             // Deactivate the current weapon, if there is one
@@ -69,6 +71,10 @@ public class Player : MonoBehaviour
             // Make the newly acquired weapon the current selected one
             currentWeapon = newWeapon;
             currentWeapon.gameObject.SetActive(true);
+        }
+        else if (newPowerUp)
+        {
+            newPowerUp.Apply(this);
         }
     }
 
