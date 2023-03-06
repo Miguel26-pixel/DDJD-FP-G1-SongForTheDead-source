@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] private float health = 5f;
+    [SerializeField] private float maxHealth = 5f;
 
     private PlayerMovement playerMovement = null;
 
@@ -86,5 +87,15 @@ public class Player : MonoBehaviour
     public float getHealth()
     {
         return health;
+    }
+
+    public void setHealth(float newHealth)
+    {
+        health = newHealth;
+    }
+
+    public float getMaxHealth()
+    {
+        return maxHealth;
     }
 }
