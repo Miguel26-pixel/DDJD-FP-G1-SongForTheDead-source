@@ -27827,6 +27827,7 @@ GameObject:
   - component: {fileID: 1765004808}
   - component: {fileID: 1765004806}
   - component: {fileID: 1765004807}
+  - component: {fileID: 1765004809}
   m_Layer: 6
   m_Name: Student
   m_TagString: Player
@@ -27997,6 +27998,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &1765004809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765004800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfcd7a2abb0fc4458d1d960c9ea96ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  emptyHeart: {fileID: -150800892, guid: 4daecf76bcf531647b273ea3bcbd7807, type: 3}
+  fullHeart: {fileID: 494836328, guid: 4daecf76bcf531647b273ea3bcbd7807, type: 3}
+  hearts: []
 --- !u!1001 &1878116909
 PrefabInstance:
   m_ObjectHideFlags: 0
