@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     public static bool playerControles = true;
 
+    private bool hasShield = false;
+
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
@@ -82,11 +84,15 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        Debug.Log("Health: " + health.ToString());
-        if (health <= 0f)
+        if (hasShield)
         {
-            Debug.Log("Player died");
+            return;
+        }
+
+        health -= damage;
+
+        if (health <= 0f)
+        { 
             Destroy(gameObject, 0.5f);
         }
     }
@@ -104,5 +110,10 @@ public class Player : MonoBehaviour
     public float getMaxHealth()
     {
         return maxHealth;
+    }
+
+    public void SetShield(bool newShield)
+    {
+        hasShield = newShield;
     }
 }
