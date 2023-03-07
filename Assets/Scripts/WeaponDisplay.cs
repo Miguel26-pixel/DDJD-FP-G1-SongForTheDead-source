@@ -12,6 +12,7 @@ public class WeaponDisplay : MonoBehaviour
     [SerializeField] private Sprite emptyBox;
     [SerializeField] private List<Weapon> weapons = new List<Weapon>();
     [SerializeField] private Image[] boxes;
+    [SerializeField] private Image[] boxesBehind;
 
     private Player player;
 
@@ -28,6 +29,10 @@ public class WeaponDisplay : MonoBehaviour
     { 
         for (int i = 0; i < weapons.Count; i++)
         {
+            if (weapons[i] == currentWeapon)
+            {
+                boxesBehind[i].transform.localScale = new Vector3(2.0f,2.0f,2.0f);
+            }
             boxes[i].sprite = weapons[i].getSprite();
         }
     }
