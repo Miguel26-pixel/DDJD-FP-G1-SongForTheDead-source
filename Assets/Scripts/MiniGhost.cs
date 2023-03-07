@@ -23,6 +23,9 @@ public class MiniGhost : MonoBehaviour
     [SerializeField] private float timeBetweenAttacks = 1.5f;
     private float attackTimer = 0f;
 
+    [SerializeField]
+    private AudioSource hurtSoundEffect;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -65,7 +68,7 @@ public class MiniGhost : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-
+        hurtSoundEffect.Play();
         if (health <= 0)
         {
             scoreSystem.IncrementScore();

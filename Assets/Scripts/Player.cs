@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
 
     public static bool playerControles = true;
 
+    [SerializeField]
+    private AudioSource hitSoundEffect;
+
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
@@ -75,7 +78,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        Debug.Log("Health: " + health.ToString());
+        hitSoundEffect.Play();
         if (health <= 0f)
         {
             Debug.Log("Player died");
