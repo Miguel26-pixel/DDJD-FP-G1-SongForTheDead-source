@@ -87,4 +87,14 @@ public class Player : MonoBehaviour
     {
         return health;
     }
+
+    public Weapon getCurrentWeapon()
+    {
+        return currentWeapon;
+    }
+
+    public List<Weapon> getWeaponsOn()
+    {
+        return weapons;
+    }
 }
