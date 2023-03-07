@@ -20,6 +20,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private AudioSource spawnSoundEffect;    
 
+    private float spawnCounter = 0;
+
     void Start()
     {
         StartCoroutine(spawnEnemy(minighostInterval, minighostPrefab));
@@ -32,15 +34,12 @@ public class EnemySpawner : MonoBehaviour
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        if (enemy != null)
+        if (enemy != null && spawnCounter <= 50)
         {
-            GameObject newEnemy = Instantiate(enemy, new Vector3(target.position.x + Random.Range(-1f, 1), target.position.y - 4, -3), Quaternion.identity);
-            StartCoroutine(spawnEnemy(interval, enemy));
-            GameObject newEnemy2 = Instantiate(enemy, new Vector3(target2.position.x + Random.Range(-1f, 1), target2.position.y - 4, -3), Quaternion.identity);
-            StartCoroutine(spawnEnemy(interval, enemy));
-            GameObject newEnemy3 = Instantiate(enemy, new Vector3(target3.position.x + Random.Range(-1f, 1), target3.position.y - 4, -3), Quaternion.identity);
+            GameObject newEnemy = Instantiate(enemy, new Vector3((target.position.x + target3.position.x)/2 + Random.Range(-1f, 1), (target.position.y+ target2.position.y)/2 - 4, -3), Quaternion.identity);
             StartCoroutine(spawnEnemy(interval, enemy));
             spawnSoundEffect.Play();
+            spawnCounter++;
         }
     }
 }
