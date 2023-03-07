@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7895482257778838177}
   - component: {fileID: 7895482257778838176}
   - component: {fileID: 7895482257778838179}
+  - component: {fileID: -640359059394273796}
   m_Layer: 9
   m_Name: Obelisk
   m_TagString: Obelisk
@@ -154,3 +155,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &-640359059394273796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7895482257778838178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd8b61d533123f469385b8d199354cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minighostPrefab: {fileID: 199516362743692298, guid: 170932895fd3f4246b2cf6b01403a808, type: 3}
+  uglyghostPrefab: {fileID: 7865597842883457249, guid: b5fcf0c214d081a43a940fddf950000b, type: 3}
+  minighostInterval: 6
+  uglyghostInterval: 7
