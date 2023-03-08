@@ -11,12 +11,10 @@ public class ScoreSystem : MonoBehaviour
     public void IncrementScore()
     {
         _score++;
-        Debug.Log("Score is now " + _score);
     }
 
     void Update()
     {
         _text.text = "Score: " + _score.ToString();
-        Debug.Log(_text.text);
     }
 }
