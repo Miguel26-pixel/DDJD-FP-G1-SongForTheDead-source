@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ScoreSystem : MonoBehaviour
 {
-    private int _score = 0;
+    private static int _score = 0;
 
     [SerializeField]
     private TMP_Text _text;
@@ -13,13 +13,6 @@ public class ScoreSystem : MonoBehaviour
         _score++;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         _text.text = "Score: " + _score.ToString();

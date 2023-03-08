@@ -15,6 +15,17 @@ public class Player : MonoBehaviour
 
     public static bool playerControles = true;
 
+    [SerializeField]
+    private AudioSource hitSoundEffect;
+
+    public GameObject cam1;
+    public GameObject cam2;
+
+    [SerializeField]
+    private AudioSource IntroSound;
+
+    [SerializeField]
+    private AudioSource MainSound;
     private bool hasShield = false;
 
     private void Awake()
@@ -84,22 +95,36 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+
+        health -= damage;
+        hitSoundEffect.Play();
         if (hasShield)
         {
             return;
         }
 
-        health -= damage;
-
         if (health <= 0f)
         { 
             Destroy(gameObject, 0.5f);
+            cam1.SetActive(false);
+            cam2.SetActive(true);
+
         }
     }
 
     public float getHealth()
     {
         return health;
+    }
+
+    public Weapon getCurrentWeapon()
+    {
+        return currentWeapon;
+    }
+
+    public List<Weapon> getWeaponsOn()
+    {
+        return weapons;
     }
 
     public void setHealth(float newHealth)
@@ -114,6 +139,6 @@ public class Player : MonoBehaviour
 
     public void SetShield(bool newShield)
     {
-        hasShield = newShield;
+            hasShield = newShield;
     }
 }

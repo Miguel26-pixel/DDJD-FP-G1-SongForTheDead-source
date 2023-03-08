@@ -21,6 +21,9 @@ public class UglyGhost : MonoBehaviour
 
     private ScoreSystem scoreSystem;
 
+    [SerializeField]
+    private AudioSource hurtSoundEffect;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,7 +56,7 @@ public class UglyGhost : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-
+        hurtSoundEffect.Play();
         if (health <= 0)
         {
             scoreSystem.IncrementScore();
