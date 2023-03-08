@@ -7,11 +7,13 @@ public class EnemySpawner : MonoBehaviour
     private GameObject minighostPrefab;
     [SerializeField]
     private GameObject uglyghostPrefab;
+    [SerializeField]
+    private GameObject demonPrefab;
 
     [SerializeField]
-    private float minighostInterval = 6f;
+    private float minighostInterval = 5f;
     [SerializeField]
-    private float uglyghostInterval = 7f;
+    private float uglyghostInterval = 5f;
 
     private Transform target;
     private Transform target2;
@@ -20,10 +22,20 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private AudioSource spawnSoundEffect;    
 
+    [SerializeField]
+    private AudioSource spawnDemonSoundEffect; 
+
+    [SerializeField]
+    private GameObject initialDemon;
+
+    private bool spawnDemon = false;  
+
     private float spawnCounter = 0;
 
     void Start()
     {
+        initialDemon = GameObject.FindWithTag("Demon");
+        Destroy(initialDemon);
         StartCoroutine(spawnEnemy(minighostInterval, minighostPrefab));
         StartCoroutine(spawnEnemy(uglyghostInterval, uglyghostPrefab));
         target = GameObject.FindWithTag("Obelisk").transform;
@@ -40,6 +52,16 @@ public class EnemySpawner : MonoBehaviour
             StartCoroutine(spawnEnemy(interval, enemy));
             spawnSoundEffect.Play();
             spawnCounter++;
+        }
+    }
+
+    void Update()
+    {
+        if (spawnCounter > 50 && !spawnDemon)
+        {
+            spawnDemonSoundEffect.Play();
+            GameObject newEnemy = Instantiate(demonPrefab, new Vector3((target.position.x + target3.position.x)/2 + Random.Range(-1f, 1), (target.position.y+ target2.position.y)/2 - 4, -3), Quaternion.identity);
+            spawnDemon = true;
         }
     }
 }

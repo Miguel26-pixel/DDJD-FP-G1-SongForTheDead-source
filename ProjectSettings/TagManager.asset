@@ -9,6 +9,7 @@ TagManager:
   - Camera
   - Obelisk1
   - Obelisk2
+  - Demon
   layers:
   - Default
   - TransparentFX
