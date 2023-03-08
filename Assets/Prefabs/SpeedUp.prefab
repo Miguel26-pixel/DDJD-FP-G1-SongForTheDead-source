@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5418920388338173736}
   m_Layer: 0
   m_Name: SpeedUp
-  m_TagString: Untagged
+  m_TagString: Speed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMultiplier: 0
   duration: 10
+  playerColor: {r: 0.99682605, g: 1, b: 0.3537736, a: 1}

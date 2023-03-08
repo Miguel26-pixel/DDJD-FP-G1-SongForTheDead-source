@@ -18,13 +18,13 @@ public class HealthDisplay : MonoBehaviour
     void Start()
     {
         player = GetComponent<Player>();
-        currentHealth = player.getHealth();
+        currentHealth = player.GetHealth();
     }
 
     // Update is called once per frame
     void Update()
     { 
-        currentHealth = player == null ? 0 : player.getHealth();
+        currentHealth = player == null ? 0 : player.GetHealth();
         for (int i = 0; i < hearts.Length; i++)
         {
             hearts[i].sprite = i >= currentHealth ? emptyHeart : fullHeart;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SpeedUp : PowerUp
 {
@@ -24,7 +25,6 @@ public class SpeedUp : PowerUp
         yield return new WaitForSeconds(duration);
 
         movement.SetSpeed(originalSpeed);
-        Debug.Log("Back to original speed of " + originalSpeed);
         Destroy(gameObject);
     }
 }

@@ -10,17 +10,17 @@ public class Heart : PowerUp
     override public void Apply(Player player)
     {
         Debug.Log("Picked a heart!");
-        Debug.Log("Current health points " + player.getHealth());
-        float health = player.getHealth();
+        Debug.Log("Current health points " + player.GetHealth());
+        float health = player.GetHealth();
 
-        if (health == player.getMaxHealth())
+        if (health == player.GetMaxHealth())
         {
             return;
         }
 
         Debug.Log("New health " + (health + healthPoints));
 
-        player.setHealth(health + healthPoints);
+        player.SetHealth(health + healthPoints);
         Destroy(gameObject);
     }
 }

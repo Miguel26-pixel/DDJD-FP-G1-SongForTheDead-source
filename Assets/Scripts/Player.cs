@@ -97,17 +97,17 @@ public class Player : MonoBehaviour
         }
     }
 
-    public float getHealth()
+    public float GetHealth()
     {
         return health;
     }
 
-    public void setHealth(float newHealth)
+    public void SetHealth(float newHealth)
     {
         health = newHealth;
     }
 
-    public float getMaxHealth()
+    public float GetMaxHealth()
     {
         return maxHealth;
     }

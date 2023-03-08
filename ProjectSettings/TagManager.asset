@@ -9,6 +9,8 @@ TagManager:
   - Camera
   - Obelisk1
   - Obelisk2
+  - Speed
+  - Shield
   layers:
   - Default
   - TransparentFX
