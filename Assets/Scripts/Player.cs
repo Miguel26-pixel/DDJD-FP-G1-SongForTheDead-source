@@ -9,10 +9,13 @@ public class Player : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] private float health = 5f;
+    [SerializeField] private float maxHealth = 5f;
 
     private PlayerMovement playerMovement = null;
 
     public static bool playerControles = true;
+
+    private bool hasShield = false;
 
     private void Awake()
     {
@@ -49,6 +52,8 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Weapon newWeapon = other.GetComponent<Weapon>();
+        PowerUp newPowerUp = other.GetComponent<PowerUp>();
+
         if (newWeapon && !weapons.Contains(newWeapon))
         {
             // Deactivate the current weapon, if there is one
@@ -69,16 +74,25 @@ public class Player : MonoBehaviour
             currentWeapon = newWeapon;
             currentWeapon.gameObject.SetActive(true);
         }
+        else if (newPowerUp)
+        {
+            Debug.Log("Picked up powerup");
+            newPowerUp.Apply(this);
+        }
     }
 
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        Debug.Log("Health: " + health.ToString());
-        if (health <= 0f)
+        if (hasShield)
         {
-            Debug.Log("Player died");
+            return;
+        }
+
+        health -= damage;
+
+        if (health <= 0f)
+        { 
             Destroy(gameObject, 0.5f);
         }
     }
@@ -86,5 +100,20 @@ public class Player : MonoBehaviour
     public float getHealth()
     {
         return health;
+    }
+
+    public void setHealth(float newHealth)
+    {
+        health = newHealth;
+    }
+
+    public float getMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    public void SetShield(bool newShield)
+    {
+        hasShield = newShield;
     }
 }
