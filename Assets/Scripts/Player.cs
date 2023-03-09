@@ -95,13 +95,13 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-
-        health -= damage;
-        hitSoundEffect.Play();
         if (hasShield)
         {
             return;
         }
+
+        health -= damage;
+        hitSoundEffect.Play();
 
         if (health <= 0f)
         { 
