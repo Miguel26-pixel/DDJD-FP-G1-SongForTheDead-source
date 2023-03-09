@@ -19,6 +19,7 @@ public class Shield : PowerUp
 
         yield return new WaitForSeconds(duration);
 
+        Debug.Log("End of power-up");
         player.RemovePowerUp(this);
         player.SetShield(false);
         Destroy(gameObject);
