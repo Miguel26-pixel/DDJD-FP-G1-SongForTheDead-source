@@ -15,9 +15,11 @@ public class Shield : PowerUp
     private IEnumerator ActivateSpeedUp(Player player)
     {
         player.SetShield(true);
+        player.AddPowerUp(this);
 
         yield return new WaitForSeconds(duration);
 
+        player.RemovePowerUp(this);
         player.SetShield(false);
         Destroy(gameObject);
     }

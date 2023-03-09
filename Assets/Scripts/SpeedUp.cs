@@ -20,11 +20,12 @@ public class SpeedUp : PowerUp
 
         float originalSpeed = movement.GetSpeed();
         movement.SetSpeed(originalSpeed * speedMultiplier);
+        player.AddPowerUp(this);
 
         yield return new WaitForSeconds(duration);
 
         movement.SetSpeed(originalSpeed);
-        Debug.Log("Back to original speed of " + originalSpeed);
+        player.RemovePowerUp(this);
         Destroy(gameObject);
     }
 }

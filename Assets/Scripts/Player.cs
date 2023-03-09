@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     [SerializeField] private List<Weapon> weapons = new List<Weapon>();
     [SerializeField] private Weapon currentWeapon = null;
 
+    [Header("Power-ups")]
+    [SerializeField] private List<PowerUp> powerUps = new List<PowerUp>();
+
     [Header("Stats")]
     [SerializeField] private float health = 5f;
     [SerializeField] private float maxHealth = 5f;
@@ -110,6 +113,21 @@ public class Player : MonoBehaviour
             cam2.SetActive(true);
 
         }
+    }
+
+    public void AddPowerUp(PowerUp powerUp)
+    {
+        powerUps.Add(powerUp);
+    }
+
+    public void RemovePowerUp(PowerUp powerUp)
+    {
+        powerUps.Remove(powerUp);
+    }
+
+    public List<PowerUp> GetPowerUps()
+    {
+        return powerUps;
     }
 
     public float getHealth()
