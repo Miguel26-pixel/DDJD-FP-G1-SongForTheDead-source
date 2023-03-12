@@ -17,4 +17,9 @@ public class ScoreSystem : MonoBehaviour
     {
         _text.text = "Score: " + _score.ToString();
     }
+
+    public int getScore()
+    {
+        return _score;
+    }
 }

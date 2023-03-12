@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Weapon newWeapon = other.GetComponent<Weapon>();
+        Debug.Log(newWeapon);
         PowerUp newPowerUp = other.GetComponent<PowerUp>();
 
         if (newWeapon && !weapons.Contains(newWeapon))
@@ -109,8 +110,10 @@ public class Player : MonoBehaviour
         if (health <= 0f)
         { 
             Destroy(gameObject, 0.5f);
+            // MainSound.Stop();
             cam1.SetActive(false);
             cam2.SetActive(true);
+            // IntroSound.Play();
 
         }
     }
