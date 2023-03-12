@@ -20,9 +20,11 @@ public class FireBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (_rigidbody && collision.gameObject.CompareTag("Player"))
+        if (_rigidbody)
         {
-            playerTarget.TakeDamage(_damage);
+            if (collision.gameObject.CompareTag("Player")) {
+                playerTarget.TakeDamage(_damage);
+            }
             Destroy(gameObject);
         }
     }
