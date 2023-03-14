@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Shield : PowerUp
 {
-    [SerializeField] float duration;
+    [SerializeField]float duration;
+    
     public override void Apply(Player player)
     {
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(ActivateSpeedUp(player));
+        setIsUp(true);
     }
 
     private IEnumerator ActivateSpeedUp(Player player)
@@ -23,5 +25,10 @@ public class Shield : PowerUp
         player.RemovePowerUp(this);
         player.SetShield(false);
         Destroy(gameObject);
+    }
+    
+    public float getDuration()
+    {
+        return duration;
     }
 }

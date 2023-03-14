@@ -12,6 +12,7 @@ public class SpeedUp : PowerUp
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(ActivateSpeedUp(player));
+        setIsUp(true);
     }
 
     private IEnumerator ActivateSpeedUp(Player player)
@@ -27,5 +28,10 @@ public class SpeedUp : PowerUp
         movement.SetSpeed(originalSpeed);
         player.RemovePowerUp(this);
         Destroy(gameObject);
+    }
+
+    public float getDuration()
+    {
+        return duration;
     }
 }

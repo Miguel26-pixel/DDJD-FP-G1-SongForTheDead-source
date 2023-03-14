@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class PowerUpDisplay : MonoBehaviour
 {
@@ -14,10 +16,10 @@ public class PowerUpDisplay : MonoBehaviour
     [SerializeField] private List<PowerUp> powerUps = new List<PowerUp>();
     [SerializeField] private Image[] boxes;
     [SerializeField] private Image[] boxesBehind;
+    [SerializeField] private List<TMP_Text> texts = new List<TMP_Text>();
 
     private Player player;
 
-    // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Player>();
@@ -25,7 +27,6 @@ public class PowerUpDisplay : MonoBehaviour
         powerUps = player.GetPowerUps();
     }
 
-    // Update is called once per frame
     void Update()
     {
         powerUps = player.GetPowerUps();
@@ -34,12 +35,13 @@ public class PowerUpDisplay : MonoBehaviour
             if (i >= powerUps.Count)
             {
                 boxes[i].sprite = emptyBox;
+                texts[i].text = "0 s";
             }
         }
         for (int i = 0; i < powerUps.Count; i++)
         {
             boxes[i].sprite = powerUps[i].getSprite();
+            texts[i].text = powerUps[i].getTimeLeft().ToString() + " s";
         }
-
     }
 }
