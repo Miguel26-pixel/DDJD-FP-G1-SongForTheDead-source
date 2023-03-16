@@ -41,7 +41,7 @@ public class PowerUpDisplay : MonoBehaviour
         for (int i = 0; i < powerUps.Count; i++)
         {
             boxes[i].sprite = powerUps[i].getSprite();
-            texts[i].text = powerUps[i].getTimeLeft().ToString() + " s";
+            texts[i].text = ((int)powerUps[i].getTimeLeft()).ToString() + " s";
         }
     }
 }
