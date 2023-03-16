@@ -11,9 +11,12 @@ public class EnemySpawner : MonoBehaviour
     private GameObject demonPrefab;
 
     [SerializeField]
-    private float minighostInterval = 5f;
+    private GameObject cam;
+
     [SerializeField]
-    private float uglyghostInterval = 5f;
+    private float minighostInterval = 3f;
+    [SerializeField]
+    private float uglyghostInterval = 4f;
 
     private Transform target;
     private Transform target2;
@@ -25,42 +28,54 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private AudioSource spawnDemonSoundEffect; 
 
-    [SerializeField]
-    private GameObject initialDemon;
+    private Demon initialDemon;
+
+    private Player player;
 
     private bool spawnDemon = false;  
 
-    private float spawnCounter = 0;
+    private float playerHealth;
+
+    private ScoreSystem scoreSystem;
 
     void Start()
     {
-        initialDemon = GameObject.FindWithTag("Demon");
-        Destroy(initialDemon);
+        cam.SetActive(false);
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        initialDemon = GameObject.FindWithTag("Demon").GetComponent<Demon>();
         StartCoroutine(spawnEnemy(minighostInterval, minighostPrefab));
         StartCoroutine(spawnEnemy(uglyghostInterval, uglyghostPrefab));
         target = GameObject.FindWithTag("Obelisk").transform;
         target2 = GameObject.FindWithTag("Obelisk1").transform;
         target3 = GameObject.FindWithTag("Obelisk2").transform;
+        scoreSystem = FindObjectOfType<ScoreSystem>();
     }
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        if (enemy != null && spawnCounter <= 50)
+        playerHealth = player.getHealth();
+        Debug.Log(scoreSystem.getScore());
+        Debug.Log(enemy != null);
+        Debug.Log(player.getHealth());
+        if (enemy != null && scoreSystem.getScore() <= 20 && playerHealth > 0)
         {
             GameObject newEnemy = Instantiate(enemy, new Vector3((target.position.x + target3.position.x)/2 + Random.Range(-1f, 1), (target.position.y+ target2.position.y)/2 - 4, -3), Quaternion.identity);
             StartCoroutine(spawnEnemy(interval, enemy));
+            GameObject newEnemy2 = Instantiate(enemy, new Vector3((target.position.x + target3.position.x)/2 + Random.Range(-1f, 1), (target.position.y+ target2.position.y)/2 - 4, -3), Quaternion.identity);
+            StartCoroutine(spawnEnemy(interval, enemy));
+            GameObject newEnemy3 = Instantiate(enemy, new Vector3((target.position.x + target3.position.x)/2 + Random.Range(-1f, 1), (target.position.y+ target2.position.y)/2 - 4, -3), Quaternion.identity);
+            StartCoroutine(spawnEnemy(interval, enemy));
             spawnSoundEffect.Play();
-            spawnCounter++;
         }
     }
 
     void Update()
     {
-        if (spawnCounter > 50 && !spawnDemon)
+        if (scoreSystem.getScore() > 40 && !spawnDemon)
         {
             spawnDemonSoundEffect.Play();
-            GameObject newEnemy = Instantiate(demonPrefab, new Vector3((target.position.x + target3.position.x)/2 + Random.Range(-1f, 1), (target.position.y+ target2.position.y)/2 - 4, -3), Quaternion.identity);
+            initialDemon.SetAlive();
             spawnDemon = true;
         }
     }

@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1166924820, guid: c8ee7a4989c0efb49a4eb5d76c91db53, type: 3}
+  m_Sprite: {fileID: -1680896339, guid: 36a17226bee7a8a4ca22d7257785751a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,8 +104,10 @@ MonoBehaviour:
   checkRadius: 10
   attackRadius: 5
   damage: 3
+  firedamage: 1
   health: 50
   shouldRotate: 1
+  isAlive: 0
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
@@ -114,6 +116,11 @@ MonoBehaviour:
   hurtSoundEffect: {fileID: -5849628481445360267}
   attackSoundEffect: {fileID: 4310111734165296908}
   deathSoundEffect: {fileID: 4687573990792909476}
+  fireHitBox: {fileID: 0}
+  _projectilePrefab: {fileID: 0}
+  _firePoint: {fileID: 0}
+  cam: {fileID: 0}
+  fireSoundEffect: {fileID: 0}
 --- !u!82 &-5849628481445360267
 AudioSource:
   m_ObjectHideFlags: 0

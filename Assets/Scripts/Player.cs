@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     [SerializeField] private List<Weapon> weapons = new List<Weapon>();
     [SerializeField] private Weapon currentWeapon = null;
 
+    [Header("Power-ups")]
+    [SerializeField] private List<PowerUp> powerUps = new List<PowerUp>();
+
     [Header("Stats")]
     [SerializeField] private float health = 5f;
     [SerializeField] private float maxHealth = 5f;
@@ -63,6 +66,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Weapon newWeapon = other.GetComponent<Weapon>();
+        Debug.Log(newWeapon);
         PowerUp newPowerUp = other.GetComponent<PowerUp>();
 
         if (newWeapon && !weapons.Contains(newWeapon))
@@ -95,21 +99,38 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-
-        health -= damage;
-        hitSoundEffect.Play();
         if (hasShield)
         {
             return;
         }
 
+        health -= damage;
+        hitSoundEffect.Play();
+
         if (health <= 0f)
         { 
             Destroy(gameObject, 0.5f);
+            // MainSound.Stop();
             cam1.SetActive(false);
             cam2.SetActive(true);
+            // IntroSound.Play();
 
         }
+    }
+
+    public void AddPowerUp(PowerUp powerUp)
+    {
+        powerUps.Add(powerUp);
+    }
+
+    public void RemovePowerUp(PowerUp powerUp)
+    {
+        powerUps.Remove(powerUp);
+    }
+
+    public List<PowerUp> GetPowerUps()
+    {
+        return powerUps;
     }
 
     public float getHealth()

@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class Shield : PowerUp
 {
-    [SerializeField] float duration;
-    [SerializeField] Color playerColor;
+    [SerializeField]float duration;
+    
     public override void Apply(Player player)
     {
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(ActivateSpeedUp(player));
+        setIsUp(true);
     }
 
     private IEnumerator ActivateSpeedUp(Player player)
     {
         player.SetShield(true);
-        Color originalColor = player.GetComponent<SpriteRenderer>().color;
-        player.GetComponent<SpriteRenderer>().color = playerColor;
+        player.AddPowerUp(this);
 
         yield return new WaitForSeconds(duration);
 
+        Debug.Log("End of power-up");
+        player.RemovePowerUp(this);
         player.SetShield(false);
-        player.GetComponent<SpriteRenderer>().color = originalColor;
         Destroy(gameObject);
+    }
+    
+    public float getDuration()
+    {
+        return duration;
     }
 }
