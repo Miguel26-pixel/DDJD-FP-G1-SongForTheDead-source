@@ -18,6 +18,25 @@ Survive for as long as you can against multiple hordes of ghosts! See how long y
 - TAB - Change weapon
 - SPACE - Start game on main menu
 
+## Enemies
+
+- MiniGhost - melee attack enemy
+- UglyGhost - melee attack enemy
+- Demon - ranged attack boss enemy
+
+## Weapons
+
+- Microphone - ranged weapon
+- Guitar - melee weapon
+- Drums - ranged weapon in all directions
+
+## Power Ups
+
+- Monster - speed up for 10 seconds
+- Shield - don’t receive damage for 10 seconds
+- Heart - recover health
+
+
 ## Download
 Here you can download the executable for Windows : 
 https://amorim47.itch.io/songforthedead
